@@ -13,16 +13,16 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace dsi_mockup_pero_en_xaml_xd
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class PaginaUnoCreditos : Page
     {
-        public MainPage()
+        public PaginaUnoCreditos()
         {
             this.InitializeComponent();
         }
@@ -32,18 +32,6 @@ namespace dsi_mockup_pero_en_xaml_xd
             {
                 Frame.GoBack();
             }
-        }
-        private void Page1Jugar_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(PaginaUnoCreditos));
-        }
-        private void Page1Options_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(PaginaUnoOpciones));
-        }
-        private void Page1Credits_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(PaginaUnoCreditos));
         }
     }
 }

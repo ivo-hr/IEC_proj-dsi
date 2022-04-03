@@ -1,0 +1,49 @@
+﻿<Page
+    x:Class="dsi_mockup_pero_en_xaml_xd.PaginaUnoOpciones"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:dsi_mockup_pero_en_xaml_xd"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Canvas>
+            <Image Stretch="Fill" Source="/Assets/fondo.png" Height="1009" Width="1500"/>
+        </Canvas>
+        <Button Grid.Row="2" Margin="40,0,0,0"
+            Click="Page1Return_OnClick">
+            <SymbolIcon Symbol="Back" />
+        </Button>
+
+        <StackPanel Width="300" Margin="120" Grid.Row="1" >
+            <TextBlock Text="Volumen de Musica:" Margin="0,0,0,5"/>
+            <Slider x:Name="sliderMusic" Background="Black"
+            Minimum="0" 
+            Maximum="10" 
+            Value=" 8"/>
+            <TextBlock Text="Volumen SFX :" Margin="0,0,0,5"/>
+            <Slider x:Name="sliderSFX" Background="Black"
+            Minimum="0" 
+            Maximum="10" 
+            Value=" 4"/>
+            <TextBlock Text="Velocidad Texto" Margin="0,0,0,5"/>
+            <Slider x:Name="sliderTextSpeed" Background="Black"
+            Minimum="0" 
+            Maximum="3" 
+            Value="2"/>
+            <TextBlock Text="Cantidad Efectos Visuales:" Margin="0,0,0,5"/>
+            <Slider x:Name="sliderSliderVFX" Background="Black"
+            Minimum="0" 
+            Maximum="9"
+            Value="9"/>
+        </StackPanel>
+
+    </Grid>
+</Page>

@@ -27,7 +27,7 @@
     </Page.Resources>
     
     <Grid>
-       
+
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -38,23 +38,22 @@
             <Image Stretch="Fill" Source="/Assets/fondo.png" Height="1009" Width="1500"/>
         </Canvas>
         
-        <StackPanel Grid.Column="1" Margin="40,0,0,0" VerticalAlignment="Center">
+        <StackPanel Grid.Row="0" Margin="40,0,0,0" VerticalAlignment="Center">
             <TextBlock Foreground="White" FontSize="70" Text="HEROES DEL TODAY "/>
         </StackPanel>
 
         <StackPanel Grid.Row="1" Margin="0,0,0,0" VerticalAlignment="Center">
             <Button Content="Empesar" Style="{StaticResource BigButton}"
-                Click="Page1Return_OnClick"/>
+                Click="Page1Jugar_Click"/>
 
-            <Button Content="Continuar" Style="{StaticResource BigButton}" IsEnabled="False" 
-                Click="Page1Return_OnClick" />
+            <Button Content="Continuar" Style="{StaticResource BigButton}" IsEnabled="False" />
         </StackPanel>
         
         <StackPanel Grid.Row="2" Margin="0,0,0,0" VerticalAlignment="Center">
             <Button Content="Options" Style="{StaticResource SmallButton}"
-                Click="Page1Return_OnClick"/>
+                Click="Page1Options_Click"/>
             <Button Content="Credits" Style="{StaticResource SmallButton}"
-                Click="Page1Return_OnClick"/>
+                Click="Page1Credits_Click"/>
         </StackPanel>
     </Grid>
 </Page>
