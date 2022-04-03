@@ -128,6 +128,9 @@
     <Compile Include="PaginaUnoOpciones.xaml.cs">
       <DependentUpon>PaginaUnoOpciones.xaml</DependentUpon>
     </Compile>
+    <Compile Include="gameplay.xaml.cs">
+      <DependentUpon>gameplay.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +141,9 @@
   <ItemGroup>
     <Content Include="Assets\ContinuarBoton.png" />
     <Content Include="Assets\fondo.png" />
+    <Content Include="Assets\Blck.png" />
+    <Content Include="Assets\gameplai.png" />
+    <Content Include="Assets\Image Pasted 2022-08-03 at 17.33.31.png" />
     <Content Include="Assets\jugarBoton.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
@@ -162,6 +168,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PaginaUnoOpciones.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="gameplay.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
