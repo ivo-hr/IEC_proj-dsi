@@ -8,6 +8,24 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    <Page.Resources>
+        <Style x:Key="BigButton" TargetType="Button">
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="40"/>
+            <Setter Property="Margin" Value="40,40,40,40" />
+            <Setter Property="Width" Value="300" />
+            <Setter Property="Height" Value="100" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+        </Style>
+        <Style x:Key="SmallButton" TargetType="Button">
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Margin" Value="40,20,20,20" />
+            <Setter Property="Width" Value="180" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+        </Style>
+    </Page.Resources>
+    
     <Grid>
        
         <Grid.RowDefinitions>
@@ -25,24 +43,18 @@
         </StackPanel>
 
         <StackPanel Grid.Row="1" Margin="0,0,0,0" VerticalAlignment="Center">
-            <Button Content="Empesar"
-                Click="Page1Button_OnClick"
-                Grid.Row="1"
-                Margin="40,40,40,40" Height="100" Width="320" VerticalAlignment="Top" />
-        <Button Content="Continuar"
-            Click="Page1Button_OnClick"
-            Grid.Row="1"
-            Margin="40,40,40,40" Height="100" Width="320" VerticalAlignment="Top" />
+            <Button Content="Empesar" Style="{StaticResource BigButton}"
+                Click="Page1Return_OnClick"/>
+
+            <Button Content="Continuar" Style="{StaticResource BigButton}" IsEnabled="False" 
+                Click="Page1Return_OnClick" />
         </StackPanel>
+        
         <StackPanel Grid.Row="2" Margin="0,0,0,0" VerticalAlignment="Center">
-            <Button Content="Options"
-                Click="Page1Button_OnClick"
-                Grid.Row="1"
-                Margin="40,40,40,20" Height="50" Width="200" VerticalAlignment="Top" />
-            <Button Content="Credits"
-                Click="Page1Button_OnClick"
-                Grid.Row="1"
-                Margin="40,20,40,20" Height="50" Width="200" VerticalAlignment="Top" />
+            <Button Content="Options" Style="{StaticResource SmallButton}"
+                Click="Page1Return_OnClick"/>
+            <Button Content="Credits" Style="{StaticResource SmallButton}"
+                Click="Page1Return_OnClick"/>
         </StackPanel>
     </Grid>
 </Page>

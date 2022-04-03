@@ -26,12 +26,13 @@ namespace dsi_mockup_pero_en_xaml_xd
         {
             this.InitializeComponent();
         }
-        private void Page1Button_OnClick(object sender, RoutedEventArgs e)
+        private void Page1Return_OnClick(object sender, RoutedEventArgs e)
         {
             if (Frame.CanGoBack)
             {
                 Frame.GoBack();
             }
         }
+
     }
 }
