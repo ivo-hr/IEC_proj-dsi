@@ -22,17 +22,35 @@ namespace dsi_mockup_pero_en_xaml_xd
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class gameplay : Page
+    public sealed partial class gameplay : Page, INotifyPropertyChanged
     {
-        public ImageSource imgS;
+        private DispatcherTimer _timer;
+
         public gameplay()
         {
             this.InitializeComponent();
 
-            
+            _timer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
+
+            _timer.Tick += (sender, o) =>
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CurrentTime)));
+
+            _timer.Start();
+
+
         }
 
+        public string CurrentTime
+        {
+            get { return DateTime.Now.ToLongTimeString(); }
+        }
 
+        public string CurrentDate
+        {
+            get { return DateTime.Now.ToLongDateString(); }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
 
         private void Menu_Click(object sender, RoutedEventArgs e)
         {
@@ -98,6 +116,11 @@ namespace dsi_mockup_pero_en_xaml_xd
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            Menu.Visibility = Visibility.Collapsed;
+        }
+
+        private void Pause_Click(object sender, RoutedEventArgs e)
         {
             Menu.Visibility = Visibility.Collapsed;
         }
