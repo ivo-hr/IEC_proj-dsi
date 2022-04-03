@@ -19,7 +19,9 @@
         </Canvas>
 
         <StackPanel Grid.Row="0" Margin="40,0,0,0" VerticalAlignment="Center">
-            <TextBlock Foreground="White" FontSize="70" Text="Creditos"/>
+            <TextBlock Foreground="White" FontSize="80" FontWeight="ExtraBold" HorizontalAlignment="Left"
+                       FontStyle="Italic" FontFamily="Cambria" 
+                       Text="Créditos"/>
         </StackPanel>
         <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
             <TextBlock xml:space="preserve" FontSize="30" TextAlignment="Center" >

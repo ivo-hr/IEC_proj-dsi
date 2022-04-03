@@ -21,7 +21,8 @@
             Click="Page1Return_OnClick">
             <SymbolIcon Symbol="Back" />
         </Button>
-
+        <TextBlock Grid.Row="0" Foreground="White" FontSize="80" FontWeight="ExtraBold" HorizontalAlignment="Left" 
+                   VerticalAlignment="Center" FontStyle="Italic" FontFamily="Cambria"  Text="Opciones"/>
         <StackPanel Width="300" Margin="120" Grid.Row="1" >
             <TextBlock Text="Volumen de Musica:" Margin="0,0,0,5"/>
             <Slider x:Name="sliderMusic" Background="Black"
