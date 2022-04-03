@@ -55,22 +55,22 @@
             <StackPanel Grid.Row="1" Margin="40,0,0,0"  Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Center">
                 <Button HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource BigButton}" Click="Button_Click" Width="300">
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock FontFamily="Impact" VerticalAlignment="Center">Empesar</TextBlock>
+                        <TextBlock FontFamily="Impact" VerticalAlignment="Center">Comenzar</TextBlock>
                         <Image Margin="20,10,10,10" Source="/Assets/jugarBoton.png" Width="30" Height="30"></Image>
                     </StackPanel>
                 </Button>
                 <Button HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource BigButton}" Click="Button_Click" Width="300" IsEnabled="false">
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock FontFamily="Impact" VerticalAlignment="Center">Seguir</TextBlock>
+                        <TextBlock FontFamily="Impact" VerticalAlignment="Center">Continuar</TextBlock>
                         <Image Margin="20,10,10,10" Source="/Assets/ContinuarBoton.png" Width="35" Height="35"></Image>
                     </StackPanel>
                 </Button>
             </StackPanel>
 
             <StackPanel Grid.Row="2" VerticalAlignment="Center">
-                <Button Content="Options" Style="{StaticResource SmallButton}"
+                <Button Content="Opciones" Style="{StaticResource SmallButton}"
                 Click="Page1Options_Click"/>
-                <Button Content="Credits" Style="{StaticResource SmallButton}"
+                <Button Content="Créditos" Style="{StaticResource SmallButton}"
                 Click="Page1Credits_Click"/>
             </StackPanel>
         </Grid>
