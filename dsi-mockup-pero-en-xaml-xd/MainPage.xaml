@@ -17,7 +17,7 @@
         </Grid.RowDefinitions>
 
         <Canvas>
-            <Image Stretch="Fill" Source="/Assets/fondo.png"/>
+            <Image Stretch="Fill" Source="/Assets/fondo.png" Height="1009" Width="1500"/>
         </Canvas>
         
         <StackPanel Grid.Column="1" Margin="40,0,0,0" VerticalAlignment="Center">
