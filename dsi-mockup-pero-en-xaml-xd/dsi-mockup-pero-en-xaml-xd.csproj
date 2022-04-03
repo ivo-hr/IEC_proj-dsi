@@ -143,8 +143,10 @@
     <Content Include="Assets\fondo.png" />
     <Content Include="Assets\Blck.png" />
     <Content Include="Assets\gameplai.png" />
-    <Content Include="Assets\Image Pasted 2022-08-03 at 17.33.31.png" />
+    <Content Include="Assets\inv_hover.png" />
+    <Content Include="Assets\map.png" />
     <Content Include="Assets\jugarBoton.png" />
+    <Content Include="Assets\party_hover.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

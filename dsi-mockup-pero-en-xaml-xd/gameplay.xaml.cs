@@ -41,8 +41,10 @@ namespace dsi_mockup_pero_en_xaml_xd
         private void Map_startHover(object sender, RoutedEventArgs e)
         {
             BitmapImage bi = new BitmapImage();
-            bi.UriSource = new Uri("/Assets/Image Pasted 2022-08-03 at 17.33.31.png", UriKind.Relative);
+            bi.UriSource = new Uri("ms-appx:///Assets/map.png");
             hoverImg.Source = bi;
+
+            hoverImg.Height = 394;
         }
 
         private void Map_Click(object sender, RoutedEventArgs e)
@@ -57,7 +59,11 @@ namespace dsi_mockup_pero_en_xaml_xd
 
         private void Inv_startHover(object sender, RoutedEventArgs e)
         {
+            BitmapImage bi = new BitmapImage();
+            bi.UriSource = new Uri("ms-appx:///Assets/inv_hover.png");
+            hoverImg.Source = bi;
 
+            hoverImg.Height = 394;
         }
 
         private void Inventory_Click(object sender, RoutedEventArgs e)
@@ -66,7 +72,11 @@ namespace dsi_mockup_pero_en_xaml_xd
         }
         private void Party_startHover(object sender, RoutedEventArgs e)
         {
+            BitmapImage bi = new BitmapImage();
+            bi.UriSource = new Uri("ms-appx:///Assets/party_hover.png");
+            hoverImg.Source = bi;
 
+            hoverImg.Height = 394;
         }
 
         private void Party_Click(object sender, RoutedEventArgs e)
@@ -75,7 +85,11 @@ namespace dsi_mockup_pero_en_xaml_xd
         }
         private void Log_startHover(object sender, RoutedEventArgs e)
         {
+            BitmapImage bi = new BitmapImage();
+            bi.UriSource = new Uri("ms-appx:///Assets/map.png");
+            hoverImg.Source = bi;
 
+            hoverImg.Height = 394;
         }
 
         private void Log_Click(object sender, RoutedEventArgs e)
@@ -91,9 +105,11 @@ namespace dsi_mockup_pero_en_xaml_xd
         private void stopHover(object sender, RoutedEventArgs e)
         {
             BitmapImage bi = new BitmapImage();
-            bi.UriSource = new Uri("/Assets/Blck.png", UriKind.Relative);
+            bi.UriSource = new Uri("ms-appx:///Assets/Blck.png");
 
             hoverImg.Source = bi;
+
+            hoverImg.Height = 394;
         }
 
     }

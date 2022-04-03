@@ -48,7 +48,7 @@ namespace dsi_mockup_pero_en_xaml_xd
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(typeof(gameplay));
         }
     }
 }
