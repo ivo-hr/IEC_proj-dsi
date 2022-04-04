@@ -20,6 +20,7 @@
             <Setter Property="Width" Value="180" />
             <Setter Property="VerticalAlignment" Value="Top" />
         </Style>
+        
         <Style x:Key="SmallButton" TargetType="Button">
             <Setter Property="FontFamily" Value="Impact"/>
             <Setter Property="Background" Value="#252323"/>
@@ -34,22 +35,22 @@
     </Page.Resources>
     <Border BorderBrush="#FF000000" BorderThickness="1" CornerRadius="8">
         <Grid>
-
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <Canvas>
-                <Image Stretch="Fill" Source="/Assets/fondo.png" Height="1009" Width="1500"/>
-            </Canvas>
+            <Image Grid.RowSpan="3" Grid.ColumnSpan="2" Stretch="UniformToFill" Source="/Assets/fondo.png"/>
 
-            <StackPanel Grid.Row="0" Margin="40,0,0,0" VerticalAlignment="Center">
-                <TextBlock Foreground="White" FontSize="90" FontWeight="ExtraBold" HorizontalAlignment="Left"
-                       FontStyle="Italic" FontFamily="Cambria" 
-                       Text="HEROES OF TODAY "/>
-            </StackPanel>
+
+            <Viewbox><TextBlock Margin="20,20,20,20" Foreground="White" FontSize="60" FontWeight="ExtraBold"
+                     FontStyle="Italic" FontFamily="Cambria" Text="HEROES OF TODAY" Width="auto"/>
+            </Viewbox>
 
 
             <StackPanel Grid.Row="1" Margin="40,0,0,0"  Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Center">
