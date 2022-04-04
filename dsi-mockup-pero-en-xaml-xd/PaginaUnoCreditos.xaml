@@ -17,28 +17,44 @@
         <Canvas>
             <Image Stretch="Fill" Source="/Assets/fondo.png" Height="1009" Width="1500"/>
         </Canvas>
-
-        <StackPanel Grid.Row="0" Margin="40,0,0,0" VerticalAlignment="Center">
+        <Viewbox>
+            <StackPanel Grid.Row="0" Margin="40,0,0,0" VerticalAlignment="Center">
             <TextBlock Foreground="White" FontSize="80" FontWeight="ExtraBold" HorizontalAlignment="Left"
                        FontStyle="Italic" FontFamily="Cambria" 
                        Text="Créditos"/>
         </StackPanel>
-        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <TextBlock FontSize="30" TextAlignment="Center" >
-                Documentacion 
+        </Viewbox>
+
+        <Viewbox Grid.Row="1">
+        <StackPanel  VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock FontSize="40" TextAlignment="Center">
+                <Bold>Documentacion</Bold>
+                <LineBreak />
                 Jacobo
+                <LineBreak />
                 Henry
+                <LineBreak />
                 Eduardo de Orellana
-                Mockups
+                <LineBreak />
+                <Bold>Mockups</Bold>
+                <LineBreak />
+                Enrique
+                <LineBreak />
+                Jacobo Alonso
+                <LineBreak />
+                Edu
+                <LineBreak />
+                <Bold>Arte</Bold>
+                <LineBreak />
                 Jacobo
+                <LineBreak />
                 Henry
-                Eduardo de Orellana
-                Arte
-                Jacobo
-                Henry
-                Eduardo de Orellana
+                <LineBreak />
+                Eduardo de 
+                
             </TextBlock>
         </StackPanel>
+        </Viewbox>
 
 
         <Button Grid.Row="2" Margin="40,0,0,0"
