@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +26,21 @@ namespace dsi_mockup_pero_en_xaml_xd
         public Combate()
         {
             this.InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (Frame.CanGoBack)
+            {
+                Frame.GoBack();
+            }
+        }
+
+        private void Border_Click(object sender, RoutedEventArgs e)
+        {
+            Button boton = sender as Button;
+            boton.BorderBrush = new SolidColorBrush(Colors.LightGreen);
+            boton.BorderThickness = new Thickness(10);
         }
     }
 }

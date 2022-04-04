@@ -25,7 +25,7 @@
             <Setter Property="VerticalAlignment" Value="Top" />
         </Style>
     </Page.Resources>
-    
+
     <Grid>
 
         <Grid.RowDefinitions>
@@ -59,7 +59,7 @@
         <StackPanel Grid.Row="0" Grid.Column="3" Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Right">
 
             <Button Style="{StaticResource GameButton}" Click="Map_Click" Width="210">
-                
+
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95">
                     <TextBlock Text="MAP " FontSize="40" VerticalAlignment="Center"/>
                     <FontIcon Glyph=" &#59143;" FontSize="45"/>
@@ -71,15 +71,15 @@
 
 
 
-            <StackPanel Grid.Row="3" Grid.Column="0" Margin="0,0,0,0" VerticalAlignment="Bottom" HorizontalAlignment="Left">
-                <Button Style="{StaticResource GameButton}" Click="Pause_Click" Width="210">
-                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95">
-                        <FontIcon Glyph="&#59155;" FontSize="40" />
-                        <TextBlock Text=" PAUSE" FontSize="45" VerticalAlignment="Center"/>
-                    </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="0" Margin="0,0,0,0" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+            <Button Style="{StaticResource GameButton}" Click="Pause_Click" Width="210">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95">
+                    <FontIcon Glyph="&#59155;" FontSize="40" />
+                    <TextBlock Text=" PAUSE" FontSize="45" VerticalAlignment="Center"/>
+                </StackPanel>
 
-                </Button>
-            </StackPanel>
+            </Button>
+        </StackPanel>
 
         <StackPanel Grid.Row="3" Grid.Column="3" Margin="0,0,10,0" VerticalAlignment="Bottom" HorizontalAlignment="Right" Background="#55000000">
             <TextBlock Text="{x:Bind CurrentTime, Mode=OneWay}" FontSize="30" HorizontalAlignment="Right"/>
@@ -97,7 +97,7 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="4*"/>
                 <RowDefinition Height="*"/>
-                
+
             </Grid.RowDefinitions>
 
             <TextBlock Text=" MENU" FontSize="60" FontWeight="Bold"  VerticalAlignment="Center" Grid.Row="0"/>
@@ -160,8 +160,9 @@
             </Button>
 
         </Grid>
-        
-        
+        <Button Grid.Column="1" Margin="214,198,0,0" Grid.Row="1" VerticalAlignment="Top" Height="261" Grid.RowSpan="2" Width="164" Opacity="0"  Click="Button_Click"/>
+
+
 
 
 

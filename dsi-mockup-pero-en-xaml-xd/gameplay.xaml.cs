@@ -135,6 +135,10 @@ namespace dsi_mockup_pero_en_xaml_xd
             hoverImg.Height = 394;
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Combate));
+        }
     }
 
 

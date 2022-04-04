@@ -18,14 +18,15 @@
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="CornerRadius" Value="20"/>
         </Style>
-        <Style x:Key="Character" TargetType="Button">
-            <Setter Property="FontFamily" Value="Segoe UI"/>
-            <Setter Property="FontSize" Value="100"/>
-            <Setter Property="Margin" Value="40,40,40,40" />
-            <Setter Property="Width" Value="300" />
-            <Setter Property="Height" Value="100" />
-            <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Style x:Key="AbilityButton" TargetType="Button">
+            <Setter Property="Margin" Value="40,20,20,20" />
+            <Setter Property="Width" Value="140" />
+            <Setter Property="Height" Value="140" />
             <Setter Property="CornerRadius" Value="20"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Background" Value="Yellow"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="10"/>
         </Style>
         <Style x:Key="SmallButton" TargetType="Button">
             <Setter Property="FontFamily" Value="Segoe UI"/>
@@ -56,28 +57,28 @@
         <StackPanel Grid.Row="0" Margin="40,0,0,0" VerticalAlignment="Center"/>
 
         <StackPanel Grid.Row="1" Orientation ="Horizontal" VerticalAlignment="Center" Height="334" Grid.Column="0">
-            <Button Style="{StaticResource SmallButton}" Width="165" Height="250" Margin="0, 0, 0, 0">
+            <Button Style="{StaticResource SmallButton}" Width="165" Height="250" Margin="0, 0, 0, 0" Background="Transparent" Click="Border_Click">
                 <Image Source="/Assets/Fireman.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
                     <Image.RenderTransform>
                         <ScaleTransform ScaleX="-1"/>
                     </Image.RenderTransform>
                 </Image>
             </Button>
-            <Button Style="{StaticResource SmallButton}" Width="165" Height="250" Margin="0, 0, 0, 0">
+            <Button Style="{StaticResource SmallButton}" Width="165" Height="250" Margin="0, 0, 0, 0" Background="Transparent">
                 <Image Source="/Assets/Fireman.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
                     <Image.RenderTransform>
                         <ScaleTransform ScaleX="-1"/>
                     </Image.RenderTransform>
                 </Image>
             </Button>
-            <Button Style="{StaticResource SmallButton}" Width="165" Height="250" Margin="0, 0, 0, 0">
+            <Button Style="{StaticResource SmallButton}" Width="165" Height="250" Margin="0, 0, 0, 0" Background="Transparent">
                 <Image Source="/Assets/Fireman.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
                     <Image.RenderTransform>
                         <ScaleTransform ScaleX="-1"/>
                     </Image.RenderTransform>
                 </Image>
             </Button>
-            <Button Style="{StaticResource SmallButton}" Width="165" Height="250" Margin="0, 0, 0, 0">
+            <Button Style="{StaticResource SmallButton}" Width="165" Height="250" Margin="0, 0, 0, 0" Background="Transparent">
                 <Image Source="/Assets/Fireman.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
                     <Image.RenderTransform>
                         <ScaleTransform ScaleX="-1"/>
@@ -87,41 +88,48 @@
         </StackPanel>
 
         <StackPanel Grid.Row="1" Orientation ="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right" Height="334" Grid.Column="1">
-            <Button Style="{StaticResource SmallButton}" Width="180" Height="250" Margin="0, 0, 0, 0">
+            <Button Style="{StaticResource SmallButton}" Width="180" Height="250" Margin="0, 0, 0, 0" Background="Transparent">
                 <Image Source="/Assets/fuego.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
                 </Image>
             </Button>
-            <Button Style="{StaticResource SmallButton}" Width="180" Height="250" Margin="0, 0, 0, 0">
+            <Button Style="{StaticResource SmallButton}" Width="180" Height="250" Margin="0, 0, 0, 0" Background="Transparent">
                 <Image Source="/Assets/fuego.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
                 </Image>
             </Button>
-            <Button Style="{StaticResource SmallButton}" Width="180" Height="250" Margin="0, 0, 0, 0">
+            <Button Style="{StaticResource SmallButton}" Width="180" Height="250" Margin="0, 0, 0, 0" Background="Transparent">
                 <Image Source="/Assets/fuego.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
                 </Image>
             </Button>
-            <Button Style="{StaticResource SmallButton}" Width="180" Height="250" Margin="0, 0, 0, 0">
+            <Button Style="{StaticResource SmallButton}" Width="180" Height="250" Margin="0, 0, 0, 0" Background="Transparent">
                 <Image Source="/Assets/fuego.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
                 </Image>
             </Button>
         </StackPanel>
 
         <StackPanel Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Center" Height="334" Background="Blue" Grid.ColumnSpan="2">
-            <Button Style="{StaticResource SmallButton}" Width="140" Height="140" Background="Yellow" BorderBrush="Black" BorderThickness="10" VerticalAlignment="Top">
+            <Button Style="{StaticResource AbilityButton}">
                 <Border BorderThickness="10" CornerRadius="10,10,10,10" BorderBrush="Black" Background="Red" RenderTransformOrigin="0.5,0.5" Margin="-55,-55,-55,-55">
+                    <TextBlock Text="1" HorizontalAlignment="Center" FontSize="60"/>
                 </Border>
             </Button>
-            <Button Style="{StaticResource SmallButton}" Width="140" Height="140" Background="Yellow" BorderBrush="Black" BorderThickness="10" VerticalAlignment="Top">
-            <Border BorderThickness="10" CornerRadius="10,10,10,10" BorderBrush="Black" Background="Red" RenderTransformOrigin="0.5,0.5" Margin="-55,-55,-55,-55">
-            </Border>
+            <Button Style="{StaticResource AbilityButton}">
+                <Border BorderThickness="10" CornerRadius="10,10,10,10" BorderBrush="Black" Background="Red" RenderTransformOrigin="0.5,0.5" Margin="-55,-55,-55,-55">
+                    <TextBlock Text="2" HorizontalAlignment="Center" FontSize="60"/>
+                </Border>
             </Button>
-            <Button Style="{StaticResource SmallButton}" Width="140" Height="140" Background="Yellow" BorderBrush="Black" BorderThickness="10" VerticalAlignment="Top">
-            <Border BorderThickness="10" CornerRadius="10,10,10,10" BorderBrush="Black" Background="Red" RenderTransformOrigin="0.5,0.5" Margin="-55,-55,-55,-55">
-            </Border>
+            <Button Style="{StaticResource AbilityButton}">
+                <Border BorderThickness="10" CornerRadius="10,10,10,10" BorderBrush="Black" Background="Red" RenderTransformOrigin="0.5,0.5" Margin="-55,-55,-55,-55">
+                    <TextBlock Text="3" HorizontalAlignment="Center" FontSize="60"/>
+                </Border>
             </Button>
-            <Button Style="{StaticResource BigButton}" Width="200" Height="200" Background="Yellow" BorderBrush="Black" BorderThickness="10" VerticalAlignment="Top">
+            <Button Style="{StaticResource AbilityButton}" Width="200" Height="200">
                 <Border BorderThickness="10" CornerRadius="10,10,10,10" BorderBrush="Black" Background="Cyan" RenderTransformOrigin="0.5,0.5" Margin="-79,-79,-79,-79">
+                    <TextBlock Text="U" HorizontalAlignment="Center" FontSize="100"/>
                 </Border>
             </Button>
         </StackPanel>
+        <Button Style="{StaticResource SmallButton}" VerticalAlignment="Bottom" Grid.Row="2" Height="85" Width="195" Background="DarkRed" Click="Button_Click">
+            <TextBlock Text="Flee" VerticalAlignment="Center" Foreground="White"></TextBlock>
+        </Button>
     </Grid>
 </Page>
