@@ -48,12 +48,13 @@
             <Image Grid.RowSpan="3" Grid.ColumnSpan="2" Stretch="UniformToFill" Source="/Assets/fondo.png"/>
 
 
-            <Viewbox><TextBlock Margin="20,20,20,20" Foreground="White" FontSize="60" FontWeight="ExtraBold"
+            <Viewbox>
+                <TextBlock Margin="20,20,20,20" Foreground="White" FontSize="60" FontWeight="ExtraBold"
                      FontStyle="Italic" FontFamily="Cambria" Text="HEROES OF TODAY" Width="auto"/>
             </Viewbox>
 
-
-            <StackPanel Grid.Row="1" Margin="40,0,0,0"  Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Viewbox Grid.Row="1"  Margin="40,0,0,0"   HorizontalAlignment="Left" VerticalAlignment="Center">
+                <StackPanel Orientation="Vertical">
                 <Button HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource BigButton}" Click="Button_Click" Width="300">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock FontFamily="Impact" VerticalAlignment="Center">Comenzar</TextBlock>
@@ -67,13 +68,16 @@
                     </StackPanel>
                 </Button>
             </StackPanel>
+            </Viewbox>
 
-            <StackPanel Grid.Row="2" VerticalAlignment="Center">
-                <Button Content="Opciones" Style="{StaticResource SmallButton}"
-                Click="Page1Options_Click"/>
-                <Button Content="Créditos" Style="{StaticResource SmallButton}"
-                Click="Page1Credits_Click"/>
+            <Viewbox Grid.Row="2"  Margin="40,0,0,0"   HorizontalAlignment="Left" VerticalAlignment="Center">
+                <StackPanel Orientation="Vertical">
+                    <Button Content="Opciones" Style="{StaticResource SmallButton}"
+                    Click="Page1Options_Click"/>
+                    <Button Content="Créditos" Style="{StaticResource SmallButton}"
+                    Click="Page1Credits_Click"/>
             </StackPanel>
+            </Viewbox>
         </Grid>
     </Border>
 </Page>
