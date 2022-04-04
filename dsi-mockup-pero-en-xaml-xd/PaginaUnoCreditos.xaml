@@ -24,9 +24,9 @@
                        Text="Créditos"/>
         </StackPanel>
         <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <TextBlock xml:space="preserve" FontSize="30" TextAlignment="Center" >
-             <LineBreak/>Documentacion 
-             <LineBreak/>Jacobo
+            <TextBlock FontSize="30" TextAlignment="Center" >
+                Documentacion 
+                Jacobo
                 Henry
                 Eduardo de Orellana
                 Mockups
