@@ -1,8 +1,8 @@
 ﻿<Page
-    x:Class="dsi_mockup_pero_en_xaml_xd.PaginaUnoOpciones"
+    x:Class="DSI_Mockup.PaginaUnoOpciones"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:dsi_mockup_pero_en_xaml_xd"
+    xmlns:local="using:DSI_Mockup"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"

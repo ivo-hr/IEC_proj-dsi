@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace dsi_mockup_pero_en_xaml_xd
+namespace DSI_Mockup
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
