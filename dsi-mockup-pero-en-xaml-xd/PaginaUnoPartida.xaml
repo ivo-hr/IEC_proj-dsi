@@ -1,0 +1,79 @@
+﻿<Page
+    x:Class="dsi_mockup_pero_en_xaml_xd.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:dsi_mockup_pero_en_xaml_xd"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <Style x:Key="BigButton" TargetType="Button">
+            <Setter Property="FontFamily" Value="Impact"/> 
+            <Setter Property="Background" Value="#252323"/>
+            <Setter Property="Foreground" Value="#CCAE97"/>
+            <Setter Property="Opacity" Value="0.8"/>
+            <Setter Property="CornerRadius" Value="5"/>
+            <Setter Property="FontSize" Value="36"/>
+            <Setter Property="Margin" Value="40,20,20,20" />
+            <Setter Property="Width" Value="180" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+        </Style>
+        
+        <Style x:Key="SmallButton" TargetType="Button">
+            <Setter Property="FontFamily" Value="Impact"/>
+            <Setter Property="Background" Value="#252323"/>
+            <Setter Property="Foreground" Value="#CCAE97"/>
+            <Setter Property="Opacity" Value="0.8"/>
+            <Setter Property="CornerRadius" Value="5"/>
+            <Setter Property="FontSize" Value="26"/>
+            <Setter Property="Margin" Value="40,20,20,20" />
+            <Setter Property="Width" Value="180" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+        </Style>
+    </Page.Resources>
+    <Border BorderBrush="#FF000000" BorderThickness="1" CornerRadius="8">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Image Grid.RowSpan="3" Grid.ColumnSpan="2" Stretch="UniformToFill" Source="/Assets/fondo.png"/>
+
+
+            <Viewbox><TextBlock Margin="20,20,20,20" Foreground="White" FontSize="60" FontWeight="ExtraBold"
+                     FontStyle="Italic" FontFamily="Cambria" Text="HEROES OF TODAY" Width="auto"/>
+            </Viewbox>
+
+
+            <StackPanel Grid.Row="1" Margin="40,0,0,0"  Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Button HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource BigButton}" Click="Button_Click" Width="300">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontFamily="Impact" VerticalAlignment="Center">Comenzar</TextBlock>
+                        <Image Margin="20,10,10,10" Source="/Assets/jugarBoton.png" Width="30" Height="30"></Image>
+                    </StackPanel>
+                </Button>
+                <Button HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource BigButton}" Click="Button_Click" Width="300" IsEnabled="false">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontFamily="Impact" VerticalAlignment="Center">Continuar</TextBlock>
+                        <Image Margin="20,10,10,10" Source="/Assets/ContinuarBoton.png" Width="35" Height="35"></Image>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2" VerticalAlignment="Center">
+                <Button Content="Opciones" Style="{StaticResource SmallButton}"
+                Click="Page1Options_Click"/>
+                <Button Content="Créditos" Style="{StaticResource SmallButton}"
+                Click="Page1Credits_Click"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Page>
