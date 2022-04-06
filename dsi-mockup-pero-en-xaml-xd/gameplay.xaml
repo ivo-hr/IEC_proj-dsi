@@ -161,7 +161,7 @@
             </Button>
 
         </Grid>
-        <Button Grid.Column="1" Margin="214,198,0,0" Grid.Row="1" VerticalAlignment="Top" Height="261" Grid.RowSpan="2" Width="164" Opacity="0"  Click="Button_Click"/>
+        <Button Grid.Column="1" Margin="250,0,0,0" Grid.Row="2" VerticalAlignment="Top" Height="261" Width="164" Background="#45990000"  Click="Button_Click"/>
 
         <Grid x:Name="Pause" Grid.RowSpan="3" Grid.ColumnSpan="3" Background="Black" Visibility="Collapsed" Opacity="0.7" CornerRadius="40" Margin="250,0,250,0">
 
