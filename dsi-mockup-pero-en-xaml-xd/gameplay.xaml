@@ -163,9 +163,55 @@
         </Grid>
         <Button Grid.Column="1" Margin="214,198,0,0" Grid.Row="1" VerticalAlignment="Top" Height="261" Grid.RowSpan="2" Width="164" Opacity="0"  Click="Button_Click"/>
 
+        <Grid x:Name="Pause" Grid.RowSpan="3" Grid.ColumnSpan="3" Background="Black" Visibility="Collapsed" Opacity="0.7" CornerRadius="40" Margin="250,0,250,0">
 
+            <Grid.RowDefinitions>
+                <RowDefinition Height="280"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
+            <Viewbox Grid.RowSpan="3">
+                <StackPanel Background="Transparent">
+                    <Button Style="{StaticResource GameButton}" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Resume" FontSize="30" FontWeight="Bold" Click="Resume_Click" Background="Transparent"/>
+                    <Button Style="{StaticResource GameButton}" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Save Game" FontSize="30" FontWeight="Bold" Background="Transparent"/>
+                    <Button Style="{StaticResource GameButton}" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Options" FontSize="30" FontWeight="Bold" Click="Log_Click" Background="Transparent"/>
+                    <Button Style="{StaticResource GameButton}" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" Content="Return to main &#xD;&#xA;        menu" FontWeight="Bold" Click="Wait_Click" Height="140" Background="Transparent"/>
+                </StackPanel>
+            </Viewbox>
+        </Grid>
 
+        <Grid x:Name="Exit" Grid.RowSpan="3" Grid.ColumnSpan="3" Background="Black" Opacity="0.7" CornerRadius="40" Margin="250,0,250,0" Visibility="Collapsed">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Attention!" VerticalAlignment="Center" HorizontalAlignment="Center" Width="290" Height="90" FontSize="60" Foreground="Red" FontWeight="Bold"/>
+
+            <Viewbox Grid.Row="1">
+                <StackPanel Height="250">
+                    <TextBlock Text="Do you want to save your game?" Foreground="White" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+                    <Button Style="{StaticResource GameButton}" Grid.Row="1" HorizontalAlignment="Center" Content="YES" FontSize="20" Height="40" Width="70" Margin="20" Click="Exit_Click"/>
+                    <Button Style="{StaticResource GameButton}" Grid.Row="1" HorizontalAlignment="Center" Content="NO" FontSize="20" Height="40" Width="70" Click="Exit_Click"/>
+                </StackPanel>
+            </Viewbox>
+        </Grid>
+
+        <Grid x:Name="Map" Grid.RowSpan="3" Grid.ColumnSpan="3" Opacity="0.8" Background="Black" Visibility="Collapsed">
+            <Viewbox>
+                <StackPanel Background="Transparent">
+                    <TextBlock Text="Map" Foreground="White" FontSize="60" HorizontalAlignment="Left" Height="96" Width="160"/>
+                    <Image Source="/Assets/trueMap.png"></Image>
+                    <Button Style="{StaticResource GameButton}" Click="Back2_Click" Grid.Row="6" Width="175" Background="Transparent">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="175" Background="Transparent">
+                            <FontIcon Glyph="&#xE7A7;" FontSize="40" />
+                            <TextBlock Text=" back" FontSize="45" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Viewbox>
+        </Grid>
 
     </Grid>
 

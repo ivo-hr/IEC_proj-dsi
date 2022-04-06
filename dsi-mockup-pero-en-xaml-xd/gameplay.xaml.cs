@@ -67,7 +67,7 @@ namespace dsi_mockup_pero_en_xaml_xd
 
         private void Map_Click(object sender, RoutedEventArgs e)
         {
-
+            Map.Visibility = Visibility.Visible;
         }
 
         private void Options_Click(object sender, RoutedEventArgs e)
@@ -112,17 +112,21 @@ namespace dsi_mockup_pero_en_xaml_xd
 
         private void Log_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(typeof(PaginaUnoOpciones));
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
             Menu.Visibility = Visibility.Collapsed;
         }
+        private void Resume_Click(object sender, RoutedEventArgs e)
+        {
+            Pause.Visibility = Visibility.Collapsed;
+        }
 
         private void Pause_Click(object sender, RoutedEventArgs e)
         {
-            Menu.Visibility = Visibility.Collapsed;
+            Pause.Visibility = Visibility.Visible;
         }
 
         private void stopHover(object sender, RoutedEventArgs e)
@@ -138,6 +142,21 @@ namespace dsi_mockup_pero_en_xaml_xd
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Combate));
+        }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
+        }
+
+        private void Wait_Click(object sender, RoutedEventArgs e)
+        {
+            Exit.Visibility = Visibility.Visible;
+        }
+
+        private void Back2_Click(object sender, RoutedEventArgs e)
+        {
+            Map.Visibility = Visibility.Collapsed;
         }
     }
 
