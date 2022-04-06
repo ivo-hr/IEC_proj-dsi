@@ -175,7 +175,7 @@
                 <StackPanel Background="Transparent">
                     <Button Style="{StaticResource GameButton}" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Resume" FontSize="30" FontWeight="Bold" Click="Resume_Click" Background="Transparent"/>
                     <Button Style="{StaticResource GameButton}" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Save Game" FontSize="30" FontWeight="Bold" Background="Transparent"/>
-                    <Button Style="{StaticResource GameButton}" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Options" FontSize="30" FontWeight="Bold" Click="Log_Click" Background="Transparent"/>
+                    <Button Style="{StaticResource GameButton}" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Options" FontSize="30" FontWeight="Bold" Click="Options_Click" Background="Transparent"/>
                     <Button Style="{StaticResource GameButton}" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" Content="Return to main &#xD;&#xA;        menu" FontWeight="Bold" Click="Wait_Click" Height="140" Background="Transparent"/>
                 </StackPanel>
             </Viewbox>
@@ -204,6 +204,51 @@
                     <TextBlock Text="Map" Foreground="White" FontSize="60" HorizontalAlignment="Left" Height="96" Width="160"/>
                     <Image Source="/Assets/trueMap.png"></Image>
                     <Button Style="{StaticResource GameButton}" Click="Back2_Click" Grid.Row="6" Width="175" Background="Transparent">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="175" Background="Transparent">
+                            <FontIcon Glyph="&#xE7A7;" FontSize="40" />
+                            <TextBlock Text=" back" FontSize="45" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Viewbox>
+        </Grid>
+
+        <Grid x:Name="Party" Grid.RowSpan="3" Grid.ColumnSpan="3" Opacity="0.8" Background="Black" Visibility="Collapsed">
+            <Viewbox>
+                <StackPanel Background="Transparent">
+                    <TextBlock Text="Party" Foreground="White" FontSize="60" HorizontalAlignment="Left" Height="96" Width="160"/>
+                    <Image Source="/Assets/party.png"></Image>
+                    <Button Style="{StaticResource GameButton}" Click="Back5_Click" Grid.Row="6" Width="175" Background="Transparent">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="175" Background="Transparent">
+                            <FontIcon Glyph="&#xE7A7;" FontSize="40" />
+                            <TextBlock Text=" back" FontSize="45" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Viewbox>
+        </Grid>
+
+        <Grid x:Name="Inv" Grid.RowSpan="3" Grid.ColumnSpan="3" Opacity="0.8" Background="Black" Visibility="Collapsed">
+            <Viewbox>
+                <StackPanel Background="Transparent">
+                    <TextBlock Text="Inventory" Foreground="White" FontSize="60" HorizontalAlignment="Left" Height="96" Width="160"/>
+                    <Image Source="/Assets/inv.png"></Image>
+                    <Button Style="{StaticResource GameButton}" Click="Back3_Click" Grid.Row="6" Width="175" Background="Transparent">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="175" Background="Transparent">
+                            <FontIcon Glyph="&#xE7A7;" FontSize="40" />
+                            <TextBlock Text=" back" FontSize="45" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Viewbox>
+        </Grid>
+
+        <Grid x:Name="Log" Grid.RowSpan="3" Grid.ColumnSpan="3" Opacity="0.8" Background="Black" Visibility="Collapsed">
+            <Viewbox>
+                <StackPanel Background="Transparent">
+                    <TextBlock Text="Log" Foreground="White" FontSize="60" HorizontalAlignment="Left" Height="96" Width="160"/>
+                    <Image Source="/Assets/log.png"></Image>
+                    <Button Style="{StaticResource GameButton}" Click="Back4_Click" Grid.Row="6" Width="175" Background="Transparent">
                         <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="175" Background="Transparent">
                             <FontIcon Glyph="&#xE7A7;" FontSize="40" />
                             <TextBlock Text=" back" FontSize="45" VerticalAlignment="Center"/>

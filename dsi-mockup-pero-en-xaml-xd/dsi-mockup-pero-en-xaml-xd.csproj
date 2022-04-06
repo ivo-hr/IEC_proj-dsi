@@ -152,9 +152,13 @@
     <Content Include="Assets\Blck.png" />
     <Content Include="Assets\fuego.png" />
     <Content Include="Assets\gameplai.png" />
+    <Content Include="Assets\inv.png" />
     <Content Include="Assets\inv_hover.png" />
+    <Content Include="Assets\log.png" />
+    <Content Include="Assets\log_hover.png" />
     <Content Include="Assets\map.png" />
     <Content Include="Assets\jugarBoton.png" />
+    <Content Include="Assets\party.png" />
     <Content Include="Assets\party_hover.png" />
     <Content Include="Assets\SplashScreen.png" />
     <Content Include="Assets\trueMap.png" />

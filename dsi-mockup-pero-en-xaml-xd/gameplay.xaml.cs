@@ -72,7 +72,7 @@ namespace DSI_Mockup
 
         private void Options_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(typeof(PaginaUnoOpciones));
         }
 
         private void Inv_startHover(object sender, RoutedEventArgs e)
@@ -86,7 +86,7 @@ namespace DSI_Mockup
 
         private void Inventory_Click(object sender, RoutedEventArgs e)
         {
-
+            Inv.Visibility = Visibility.Visible;
         }
         private void Party_startHover(object sender, RoutedEventArgs e)
         {
@@ -99,12 +99,12 @@ namespace DSI_Mockup
 
         private void Party_Click(object sender, RoutedEventArgs e)
         {
-
+            Party.Visibility = Visibility.Visible;
         }
         private void Log_startHover(object sender, RoutedEventArgs e)
         {
             BitmapImage bi = new BitmapImage();
-            bi.UriSource = new Uri("ms-appx:///Assets/map.png");
+            bi.UriSource = new Uri("ms-appx:///Assets/log_hover.png");
             hoverImg.Source = bi;
 
             hoverImg.Height = 394;
@@ -112,7 +112,7 @@ namespace DSI_Mockup
 
         private void Log_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(PaginaUnoOpciones));
+            Log.Visibility = Visibility.Visible;
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
@@ -157,6 +157,21 @@ namespace DSI_Mockup
         private void Back2_Click(object sender, RoutedEventArgs e)
         {
             Map.Visibility = Visibility.Collapsed;
+        }
+
+        private void Back3_Click(object sender, RoutedEventArgs e)
+        {
+            Inv.Visibility = Visibility.Collapsed;
+        }
+
+        private void Back4_Click(object sender, RoutedEventArgs e)
+        {
+            Log.Visibility = Visibility.Collapsed;
+        }
+
+        private void Back5_Click(object sender, RoutedEventArgs e)
+        {
+            Party.Visibility = Visibility.Collapsed;
         }
     }
 
