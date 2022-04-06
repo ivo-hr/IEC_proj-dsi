@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="dsi_mockup_pero_en_xaml_xd.MainPage"
+    x:Class="dsi_mockup_pero_en_xaml_xd.PaginaUnoTrans"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:dsi_mockup_pero_en_xaml_xd"
@@ -10,7 +10,7 @@
 
     <Page.Resources>
         <Style x:Key="BigButton" TargetType="Button">
-            <Setter Property="FontFamily" Value="Impact"/> 
+            <Setter Property="FontFamily" Value="Impact"/>
             <Setter Property="Background" Value="#252323"/>
             <Setter Property="Foreground" Value="#CCAE97"/>
             <Setter Property="Opacity" Value="0.8"/>
@@ -20,7 +20,7 @@
             <Setter Property="Width" Value="180" />
             <Setter Property="VerticalAlignment" Value="Top" />
         </Style>
-        
+
         <Style x:Key="SmallButton" TargetType="Button">
             <Setter Property="FontFamily" Value="Impact"/>
             <Setter Property="Background" Value="#252323"/>
@@ -35,13 +35,10 @@
     </Page.Resources>
     <Border BorderBrush="#FF000000" BorderThickness="1" CornerRadius="8">
         <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="3*"/>
-                <ColumnDefinition Width="5*"/>
-            </Grid.ColumnDefinitions>
+
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="5*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
@@ -49,34 +46,31 @@
 
 
             <Viewbox>
-                <TextBlock Margin="20,20,20,20" Foreground="White" FontSize="60" FontWeight="ExtraBold"
-                     FontStyle="Italic" FontFamily="Cambria" Text="HEROES OF TODAY" Width="auto"/>
+                <TextBlock Margin="20,20,20,20" Foreground="Black" FontSize="20" FontWeight="ExtraBold"
+                     FontStyle="Italic" FontFamily="Cambria" Text="Selecciona fichero" Width="auto"/>
             </Viewbox>
 
-            <Viewbox Grid.Row="1"  Margin="40,0,0,0"   HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Viewbox Grid.Row="1"  Margin="20,20,20,20"   HorizontalAlignment="Center" VerticalAlignment="Center">
                 <StackPanel Orientation="Vertical">
-                <Button HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource BigButton}" Click="Button_Click" Width="300">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock FontFamily="Impact" VerticalAlignment="Center">Comenzar</TextBlock>
-                        <Image Margin="20,10,10,10" Source="/Assets/jugarBoton.png" Width="30" Height="30"></Image>
-                    </StackPanel>
-                </Button>
-                <Button HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource BigButton}" Click="Button_Click" Width="300" IsEnabled="false">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock FontFamily="Impact" VerticalAlignment="Center">Continuar</TextBlock>
-                        <Image Margin="20,10,10,10" Source="/Assets/ContinuarBoton.png" Width="35" Height="35"></Image>
-                    </StackPanel>
-                </Button>
-            </StackPanel>
+                    <Button HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource BigButton}" Click="Page1Gameplay_OnClick" Width="160">
+                        <TextBlock FontFamily="Impact" FontSize="20" VerticalAlignment="Center">New Game</TextBlock>
+                    </Button>
+                    <Button HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource BigButton}" Click="Page1Gameplay_OnClick" Width="160" IsEnabled="false">
+                        <TextBlock FontFamily="Impact" FontSize="20" VerticalAlignment="Center">New Game</TextBlock>
+                    </Button>
+                    <Button HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource BigButton}" Click="Page1Gameplay_OnClick" Width="160" IsEnabled="false">
+                        <TextBlock FontFamily="Impact" FontSize="20" VerticalAlignment="Center">New Game</TextBlock>
+                    </Button>
+                </StackPanel>
             </Viewbox>
 
-            <Viewbox Grid.Row="2"  Margin="20,20,20,20"   HorizontalAlignment="Left" VerticalAlignment="Center">
-                <StackPanel Orientation="Vertical">
+            <Viewbox Grid.Row="2"  Margin="20,20,20,20"   HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel Orientation="Horizontal">
                     <Button Content="Opciones" Style="{StaticResource SmallButton}"
-                    Click="Page1Options_Click" Width="120" FontSize="20" />
-                    <Button Content="Créditos" Style="{StaticResource SmallButton}"
-                    Click="Page1Credits_Click" Width="120" FontSize="20" />
-            </StackPanel>
+                    Click="Page1Options_Click"/>
+                    <Button Content="Atrás" Style="{StaticResource SmallButton}"
+                    Click="Page1Return_OnClick"/>
+                </StackPanel>
             </Viewbox>
         </Grid>
     </Border>

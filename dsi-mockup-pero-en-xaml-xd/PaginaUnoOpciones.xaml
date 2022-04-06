@@ -23,7 +23,8 @@
         </Button>
         <TextBlock Grid.Row="0" Foreground="White" FontSize="80" FontWeight="ExtraBold" HorizontalAlignment="Left" 
                    VerticalAlignment="Center" FontStyle="Italic" FontFamily="Cambria"  Text="Opciones"/>
-        <StackPanel Width="300" Margin="120" Grid.Row="1" >
+        <Viewbox Grid.Row="1">
+        <StackPanel Width="300" Margin="120"  >
             <TextBlock Text="Volumen de Musica:" Margin="0,0,0,5"/>
             <Slider x:Name="sliderMusic" Background="Black"
             Minimum="0" 
@@ -45,6 +46,6 @@
             Maximum="9"
             Value="9"/>
         </StackPanel>
-
+        </Viewbox>
     </Grid>
 </Page>
