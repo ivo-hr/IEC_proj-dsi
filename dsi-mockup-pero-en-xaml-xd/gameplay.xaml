@@ -244,10 +244,12 @@
         </Grid>
 
         <Grid x:Name="Log" Grid.RowSpan="3" Grid.ColumnSpan="3" Opacity="0.8" Background="Black" Visibility="Collapsed">
-            <Viewbox>
+            <Viewbox HorizontalAlignment="Stretch">
                 <StackPanel Background="Transparent">
                     <TextBlock Text="Log" Foreground="White" FontSize="60" HorizontalAlignment="Left" Height="96" Width="160"/>
-                    <Image Source="/Assets/log.png"></Image>
+                    <ScrollViewer Height="1000" HorizontalAlignment="Stretch">
+                        <Image Source="/Assets/log.png"></Image>
+                    </ScrollViewer>
                     <Button Style="{StaticResource GameButton}" Click="Back4_Click" Grid.Row="6" Width="175" Background="Transparent">
                         <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="175" Background="Transparent">
                             <FontIcon Glyph="&#xE7A7;" FontSize="40" />
