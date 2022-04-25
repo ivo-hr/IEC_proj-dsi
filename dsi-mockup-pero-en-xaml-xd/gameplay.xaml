@@ -40,7 +40,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Image Grid.ColumnSpan="3" Grid.RowSpan="3" Stretch="UniformToFill" Source="/Assets/gameplai.png"/>
+        <Image Grid.ColumnSpan="3" Grid.RowSpan="3" Stretch="Fill" Source="/Assets/gameplai.png"/>
 
 
 
@@ -87,64 +87,54 @@
             <TextBlock Text="{x:Bind CurrentDate, Mode=OneWay}" FontSize="40" FontWeight="Bold" VerticalAlignment="Center"/>
         </StackPanel>
 
-
-
-        <Grid x:Name="Menu" Grid.ColumnSpan="2" Grid.RowSpan="3" Background="Black" Visibility="Collapsed">
+        <Grid x:Name="Menu" Grid.ColumnSpan="2" Grid.RowSpan="3" Visibility="Visible" Background="Black">
             <Grid.RowDefinitions>
+                <RowDefinition Height="1.6*"/>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="4*"/>
-                <RowDefinition Height="*"/>
-
+                <RowDefinition Height="100"/>
             </Grid.RowDefinitions>
 
-            <TextBlock Text=" MENU" FontSize="60" FontWeight="Bold"  VerticalAlignment="Center" Grid.Row="0"/>
-
-            <Button Style="{StaticResource GameButton}" 
-                    Grid.Row="1"
+            <StackPanel Grid.Row="0">
+                <TextBlock Text=" MENU" FontSize="60" FontWeight="Bold" Foreground="White" VerticalAlignment="Center"/>
+                <Button Style="{StaticResource GameButton}" 
                     Click="Inventory_Click"  
                     PointerEntered="Inv_startHover"
                     PointerExited="stopHover">
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="300">
-                    <FontIcon Glyph="&#xE8A9;" FontSize="40" />
-                    <TextBlock Text=" inventory" FontSize="45" VerticalAlignment="Center"/>
-                </StackPanel>
-            </Button>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="300">
+                        <FontIcon Glyph="&#xE8A9;" FontSize="40" />
+                        <TextBlock Text=" inventory" FontSize="45" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
 
-            <Button Style="{StaticResource GameButton}" Click="Party_Click"  
-                    Grid.Row="2"
+                <Button Style="{StaticResource GameButton}" Click="Party_Click"  
                     PointerEntered="Party_startHover"
                     PointerExited="stopHover">
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="300">
-                    <FontIcon Glyph="&#xE716;" FontSize="40" />
-                    <TextBlock Text=" party" FontSize="45" VerticalAlignment="Center"/>
-                </StackPanel>
-            </Button>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="300">
+                        <FontIcon Glyph="&#xE716;" FontSize="40" />
+                        <TextBlock Text=" party" FontSize="45" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
 
-            <Button Style="{StaticResource GameButton}" Click="Log_Click" 
-                    Grid.Row="3"
+                <Button Style="{StaticResource GameButton}" Click="Log_Click" 
                     PointerEntered="Log_startHover"
                     PointerExited="stopHover">
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="300">
-                    <FontIcon Glyph="&#xE8A4;" FontSize="40" />
-                    <TextBlock Text=" mission log" FontSize="45" VerticalAlignment="Center"/>
-                </StackPanel>
-            </Button>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="300">
+                        <FontIcon Glyph="&#xE8A4;" FontSize="40" />
+                        <TextBlock Text=" mission log" FontSize="45" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
 
-            <Button Style="{StaticResource GameButton}" Click="Map_Click" 
-                    Grid.Row="4"
+                <Button Style="{StaticResource GameButton}" Click="Map_Click" 
                     PointerEntered="Map_startHover"
                     PointerExited="stopHover">
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="300">
-                    <FontIcon Glyph="&#59143;" FontSize="40" />
-                    <TextBlock Text=" map" FontSize="45" VerticalAlignment="Center"/>
-                </StackPanel>
-            </Button>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="300">
+                        <FontIcon Glyph="&#59143;" FontSize="40" />
+                        <TextBlock Text=" map" FontSize="45" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
 
-            <Image x:Name="hoverImg" Height="Auto" Width="Auto" Margin="20, 20, 20, 20" Grid.Row="5">
+            <Image x:Name="hoverImg" Height="Auto" Width="Auto" Margin="20, 20, 20, 20" Grid.Row="1">
                 <Image.Source>
                     <BitmapImage UriSource="/Assets/Blck.png"/>
 
@@ -161,6 +151,7 @@
             </Button>
 
         </Grid>
+        
         <Button Grid.Column="1" Margin="250,0,0,0" Grid.Row="2" VerticalAlignment="Top" Height="261" Width="164" Background="#45990000"  Click="Button_Click"/>
 
         <Grid x:Name="Pause" Grid.RowSpan="3" Grid.ColumnSpan="3" Background="Black" Visibility="Collapsed" Opacity="0.7" CornerRadius="40" Margin="250,0,250,0">
