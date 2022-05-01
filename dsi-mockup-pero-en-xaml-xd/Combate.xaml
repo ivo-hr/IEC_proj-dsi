@@ -136,18 +136,21 @@
                     </StackPanel>
                 </Button>
                 <Button Style="{StaticResource AbilityButton}" VerticalAlignment="Center" Height="300" Width="200" >
-                    <StackPanel Margin= "20" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <Image Source="/Assets/Ability01.png" Width="100" Height="100"/>
-                        <TextBlock Text="Attacke " HorizontalAlignment="Center" FontSize="60"/>
-                        <TextBlock Text="Attacke" HorizontalAlignment="Center" FontSize="40"/>
+                    <StackPanel Margin= "5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <Image Source="/Assets/Ability02.png" Width="100" Height="100"/>
+                        <TextBlock Text="Ability 2 " HorizontalAlignment="Center" FontStretch="Normal" FontSize="30" FontWeight="Bold"/>
+                        <TextBlock Text = "Te rompe el corason estas triste y escuchas MCR"  HorizontalAlignment="Center" TextAlignment="Center"  FontStretch="Condensed" TextWrapping="Wrap" FontSize="20" />
                     </StackPanel>
                 </Button>
+
                 <Button Style="{StaticResource AbilityButton}" VerticalAlignment="Center" Height="300" Width="200" >
-                    <StackPanel Margin= "20" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <TextBlock Text="Attacke " HorizontalAlignment="Center" FontSize="60"/>
-                        <TextBlock Text="Attacke" HorizontalAlignment="Center" FontSize="40"/>
+                    <StackPanel Margin= "5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <Image Source="/Assets/Ability01.png" Width="100" Height="100"/>
+                        <TextBlock Text="Ability 3 " HorizontalAlignment="Center" FontStretch="Normal" FontSize="30" FontWeight="Bold"/>
+                        <TextBlock Text = "Te comes una mansana y mueres a laverga"  HorizontalAlignment="Center" TextAlignment="Center"  FontStretch="Condensed" TextWrapping="Wrap" FontSize="20" />
                     </StackPanel>
                 </Button>
+                
                 <Button Style="{StaticResource SpecialAbilityButton}" VerticalAlignment="Center" Height="300" Width="200" >
                     <StackPanel Margin= "20" HorizontalAlignment="Center" VerticalAlignment="Center">
                         <TextBlock Text="Attacke " HorizontalAlignment="Center" FontSize="60"/>
