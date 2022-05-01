@@ -24,9 +24,21 @@
             <Setter Property="Height" Value="140" />
             <Setter Property="CornerRadius" Value="20"/>
             <Setter Property="VerticalAlignment" Value="Top"/>
-            <Setter Property="Background" Value="Yellow"/>
-            <Setter Property="BorderBrush" Value="Black"/>
-            <Setter Property="BorderThickness" Value="10"/>
+            <Setter Property="Background" Value="#12CBC4"/>
+            <Setter Property="BorderBrush" Value="#1289A7"/>
+            <Setter Property="BorderThickness" Value="5"/>
+        </Style>
+        
+        <Style x:Key="SpecialAbilityButton" TargetType="Button">
+            <Setter Property="Margin" Value="40,20,20,20" />
+            <Setter Property="Width" Value="140" />
+            <Setter Property="Height" Value="140" />
+            <Setter Property="CornerRadius" Value="20"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Background" Value="#ED4C67"/>
+            <Setter Property="BorderBrush" Value="#B53471"/>
+            <Setter Property="BorderThickness" Value="5"/>
+            
         </Style>
         <Style x:Key="SmallButton" TargetType="Button">
             <Setter Property="FontFamily" Value="Segoe UI"/>
@@ -112,29 +124,33 @@
                 </Button>
             </StackPanel>
         </Viewbox>
-
+        <TextBlock Text="Habilidades " FontSize="60" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
         <Viewbox Grid.Row="2"  Grid.Column="0">
-
+        
             <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch" Background="Transparent" HorizontalAlignment="Stretch"  Grid.Row="2"  Grid.Column="0">
-                <Button Style="{StaticResource AbilityButton}">
-                    <Border BorderThickness="10" CornerRadius="10,10,10,10" BorderBrush="Black" Background="Red" RenderTransformOrigin="0.5,0.5" Margin="-55,-55,-55,-55">
-                        <TextBlock Text="1" HorizontalAlignment="Center" FontSize="60"/>
-                    </Border>
+                <Button Style="{StaticResource AbilityButton}" VerticalAlignment="Center" Height="300" Width="200" >
+                    <StackPanel Margin= "20" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock Text="Attacke " HorizontalAlignment="Center" FontSize="60"/>
+                        <TextBlock Text="Attacke" HorizontalAlignment="Center" FontSize="40"/>
+                    </StackPanel>
                 </Button>
-                <Button Style="{StaticResource AbilityButton}">
-                    <Border BorderThickness="10" CornerRadius="10,10,10,10" BorderBrush="Black" Background="Red" RenderTransformOrigin="0.5,0.5" Margin="-55,-55,-55,-55">
-                        <TextBlock Text="2" HorizontalAlignment="Center" FontSize="60"/>
-                    </Border>
+                <Button Style="{StaticResource AbilityButton}" VerticalAlignment="Center" Height="300" Width="200" >
+                    <StackPanel Margin= "20" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock Text="Attacke " HorizontalAlignment="Center" FontSize="60"/>
+                        <TextBlock Text="Attacke" HorizontalAlignment="Center" FontSize="40"/>
+                    </StackPanel>
                 </Button>
-                <Button Style="{StaticResource AbilityButton}">
-                    <Border BorderThickness="10" CornerRadius="10,10,10,10" BorderBrush="Black" Background="Red" RenderTransformOrigin="0.5,0.5" Margin="-55,-55,-55,-55">
-                        <TextBlock Text="3" HorizontalAlignment="Center" FontSize="60"/>
-                    </Border>
+                <Button Style="{StaticResource AbilityButton}" VerticalAlignment="Center" Height="300" Width="200" >
+                    <StackPanel Margin= "20" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock Text="Attacke " HorizontalAlignment="Center" FontSize="60"/>
+                        <TextBlock Text="Attacke" HorizontalAlignment="Center" FontSize="40"/>
+                    </StackPanel>
                 </Button>
-                <Button Style="{StaticResource AbilityButton}" Width="200" Height="200">
-                    <Border BorderThickness="10" CornerRadius="10,10,10,10" BorderBrush="Black" Background="Cyan" RenderTransformOrigin="0.5,0.5" Margin="-79,-79,-79,-79">
-                        <TextBlock Text="U" HorizontalAlignment="Center" FontSize="100"/>
-                    </Border>
+                <Button Style="{StaticResource SpecialAbilityButton}" VerticalAlignment="Center" Height="300" Width="200" >
+                    <StackPanel Margin= "20" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock Text="Attacke " HorizontalAlignment="Center" FontSize="60"/>
+                        <TextBlock Text="Attacke" HorizontalAlignment="Center" FontSize="40"/>
+                    </StackPanel>
                 </Button>
             </StackPanel>
         </Viewbox>
