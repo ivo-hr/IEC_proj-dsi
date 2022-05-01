@@ -151,7 +151,7 @@
     <Content Include="Assets\fondo.png" />
     <Content Include="Assets\Blck.png" />
     <Content Include="Assets\fuego.png" />
-    <Content Include="Assets\gameplai.png" />
+    <Content Include="Assets\gameplai.jpg" />
     <Content Include="Assets\inv.png" />
     <Content Include="Assets\inv_hover.png" />
     <Content Include="Assets\log.png" />
