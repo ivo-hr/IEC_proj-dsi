@@ -129,9 +129,10 @@
         
             <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch" Background="Transparent" HorizontalAlignment="Stretch"  Grid.Row="2"  Grid.Column="0">
                 <Button Style="{StaticResource AbilityButton}" VerticalAlignment="Center" Height="300" Width="200" >
-                    <StackPanel Margin= "20" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <TextBlock Text="Attacke " HorizontalAlignment="Center" FontSize="60"/>
-                        <TextBlock Text="Attacke" HorizontalAlignment="Center" FontSize="40"/>
+                    <StackPanel Margin= "5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <Image Source="/Assets/Fireman.png" Width="100" Height="100"/>
+                        <TextBlock Text="Attacke " HorizontalAlignment="Center" FontSize="60" />
+                        <TextBlock Text="Atacas al enemigo" HorizontalAlignment="Center" FontSize="40"/>
                     </StackPanel>
                 </Button>
                 <Button Style="{StaticResource AbilityButton}" VerticalAlignment="Center" Height="300" Width="200" >
