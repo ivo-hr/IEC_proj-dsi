@@ -38,8 +38,14 @@
             <Setter Property="Background" Value="#ED4C67"/>
             <Setter Property="BorderBrush" Value="#B53471"/>
             <Setter Property="BorderThickness" Value="5"/>
-            
         </Style>
+
+        <Style x:Key="AbilityText" TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="FontStretch" Value="Normal" />
+            <Setter Property="FontSize" Value="30" />
+        </Style>
+
         <Style x:Key="SmallButton" TargetType="Button">
             <Setter Property="FontFamily" Value="Segoe UI"/>
             <Setter Property="FontSize" Value="60"/>
@@ -59,18 +65,18 @@
             <RowDefinition Height="0.3*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        
-        <Image Grid.ColumnSpan="2" Grid.RowSpan="2" Stretch="Fill" Source="/Assets/bosque.png"/>
-        
+        <Image Grid.ColumnSpan="3" Grid.RowSpan="2" Stretch="Fill" Source="/Assets/bosque.png"/>
 
         <Viewbox>
             <StackPanel Grid.Row="0" Margin="40,0,0,0" VerticalAlignment="Center"/>
         </Viewbox>
 
+        <!-- PERSONAJES -->
         <Viewbox Grid.Row="1" VerticalAlignment="Center" Grid.Column="0">
             <StackPanel  Height="334" Orientation ="Horizontal">
                 <Button x:Name="fireman"  Style="{StaticResource SmallButton}" Width="165" Height="250" Margin="0, 0, 0, 0" Background="Transparent" Click="Border_Click">
@@ -104,7 +110,8 @@
             </StackPanel>
         </Viewbox>
 
-        <Viewbox Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right"  Grid.Column="1">
+        <!-- ENEMIGOS -->
+        <Viewbox Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right"  Grid.Column="1" Grid.ColumnSpan="2">
             <StackPanel  Orientation ="Horizontal"  Height="334">
                 <Button x:Name="ene1" Style="{StaticResource SmallButton}" Width="180" Height="250" Margin="0, 0, 0, 0" Background="Transparent" Click="EneBorder_Click">
                     <Image Source="/Assets/fuego.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
@@ -124,41 +131,40 @@
                 </Button>
             </StackPanel>
         </Viewbox>
-        <TextBlock Text="Habilidades " FontSize="60" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
         <Viewbox Grid.Row="2"  Grid.Column="0">
-        
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch" Background="Transparent" HorizontalAlignment="Stretch"  Grid.Row="2"  Grid.Column="0">
-                <Button Style="{StaticResource AbilityButton}" VerticalAlignment="Center" Height="300" Width="200" >
-                    <StackPanel Margin= "5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-                        <Image Source="/Assets/Ability00.png" Width="100" Height="100"/>
-                        <TextBlock Text="Ability 1 " HorizontalAlignment="Center" FontStretch="Normal" FontSize="30" FontWeight="Bold"/>
-                        <TextBlock Text = "Robas dinero al gobierno lmao abajo el gobierno lmao"  HorizontalAlignment="Center" TextAlignment="Center"  FontStretch="Condensed" TextWrapping="Wrap" FontSize="20" />
-                    </StackPanel>
-                </Button>
-                <Button Style="{StaticResource AbilityButton}" VerticalAlignment="Center" Height="300" Width="200" >
-                    <StackPanel Margin= "5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-                        <Image Source="/Assets/Ability02.png" Width="100" Height="100"/>
-                        <TextBlock Text="Ability 2 " HorizontalAlignment="Center" FontStretch="Normal" FontSize="30" FontWeight="Bold"/>
-                        <TextBlock Text = "Te rompe el corason estas triste y escuchas MCR"  HorizontalAlignment="Center" TextAlignment="Center"  FontStretch="Condensed" TextWrapping="Wrap" FontSize="20" />
-                    </StackPanel>
-                </Button>
 
-                <Button Style="{StaticResource AbilityButton}" VerticalAlignment="Center" Height="300" Width="200" >
-                    <StackPanel Margin= "5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-                        <Image Source="/Assets/Ability01.png" Width="100" Height="100"/>
-                        <TextBlock Text="Ability 3 " HorizontalAlignment="Center" FontStretch="Normal" FontSize="30" FontWeight="Bold"/>
-                        <TextBlock Text = "Te comes una mansana y mueres a laverga"  HorizontalAlignment="Center" TextAlignment="Center"  FontStretch="Condensed" TextWrapping="Wrap" FontSize="20" />
-                    </StackPanel>
-                </Button>
-                
-                <Button Style="{StaticResource SpecialAbilityButton}" VerticalAlignment="Center" Height="300" Width="200" >
-                    <StackPanel Margin= "20" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <TextBlock Text="Attacke " HorizontalAlignment="Center" FontSize="60"/>
-                        <TextBlock Text="Attacke" HorizontalAlignment="Center" FontSize="40"/>
-                    </StackPanel>
-                </Button>
+        <!-- HABILIDADES -->
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch" Background="Transparent" HorizontalAlignment="Stretch" Grid.Row="2" Grid.Column="0">
+            <Button Style="{StaticResource AbilityButton}" VerticalAlignment="Center" Height="300" Width="200" >
+                <StackPanel Margin= "5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <Image Source="/Assets/Ability00.png" Width="100" Height="100"/>
+                    <TextBlock Style="{StaticResource AbilityText}" Text="Ability 1 " FontWeight="Bold"/>
+                    <TextBlock Style="{StaticResource AbilityText}" Text = "Robas dinero al gobierno lmao abajo el gobierno lmao"  HorizontalAlignment="Center" TextAlignment="Center"  FontStretch="Condensed" TextWrapping="Wrap" FontSize="20" />
+                </StackPanel>
+            </Button>
+            <Button Style="{StaticResource AbilityButton}" VerticalAlignment="Center" Height="300" Width="200" >
+                <StackPanel Margin= "5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <Image Source="/Assets/Ability01.png" Width="100" Height="100"/>
+                    <TextBlock Style="{StaticResource AbilityText}" Text="Ability 1 " FontWeight="Bold"/>
+                    <TextBlock Style="{StaticResource AbilityText}" Text = "Te comes una mansanita y mueres alaverga"  HorizontalAlignment="Center" TextAlignment="Center"  FontStretch="Condensed" TextWrapping="Wrap" FontSize="20" />
+                </StackPanel>
+            </Button>
+            <Button Style="{StaticResource AbilityButton}" VerticalAlignment="Center" Height="300" Width="200" >
+                <StackPanel Margin= "5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <Image Source="/Assets/Ability02.png" Width="100" Height="100"/>
+                    <TextBlock Style="{StaticResource AbilityText}" Text="Ability 1 " FontWeight="Bold"/>
+                    <TextBlock Style="{StaticResource AbilityText}" Text = "TE ROMPEN EL CORASON Y ESCUHCAS EMO MCR"  HorizontalAlignment="Center" TextAlignment="Center"  FontStretch="Condensed" TextWrapping="Wrap" FontSize="20" />
+                </StackPanel>
+            </Button>
+            <Button Style="{StaticResource SpecialAbilityButton}" VerticalAlignment="Center" Height="300" Width="200" >
+                <StackPanel Margin= "5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <Image Source="/Assets/Ability03.png" Width="100" Height="100"/>
+                    <TextBlock Style="{StaticResource AbilityText}" Text="ULTRA " FontWeight="Bold"/>
+                    <TextBlock Style="{StaticResource AbilityText}" Text = "Mega ability tope de wapa increible la ostia dirian algunos ggez"  HorizontalAlignment="Center" TextAlignment="Center"  FontStretch="Condensed" TextWrapping="Wrap" FontSize="20" />
+                </StackPanel>
+            </Button>
             </StackPanel>
-        </Viewbox>
+    </Viewbox>
 
         <Viewbox Grid.Row="2"  Grid.Column="1">
 
@@ -185,8 +191,9 @@
                 </Button>
             </StackPanel>
         </Viewbox>
+        
         <Viewbox Grid.Row="3" VerticalAlignment="Bottom" HorizontalAlignment="Left">
-            <Button Style="{StaticResource SmallButton}" Height="Auto" Width="Auto" Background="DarkRed" Click="Button_Click">
+            <Button Style="{StaticResource SmallButton}" Height="Auto" Width="Auto" Background="#706fd3" Click="Button_Click">
                 <TextBlock Text="Flee" VerticalAlignment="Center" Foreground="White"></TextBlock>
             </Button>
         </Viewbox>
