@@ -65,11 +65,6 @@ namespace DSI_Mockup
             hoverImg.Height = 394;
         }
 
-        private void Map_Click(object sender, RoutedEventArgs e)
-        {
-            Map.Visibility = Visibility.Visible;
-        }
-
         private void Options_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(PaginaUnoOpciones));
@@ -152,11 +147,6 @@ namespace DSI_Mockup
         private void Wait_Click(object sender, RoutedEventArgs e)
         {
             Exit.Visibility = Visibility.Visible;
-        }
-
-        private void Back2_Click(object sender, RoutedEventArgs e)
-        {
-            Map.Visibility = Visibility.Collapsed;
         }
 
         private void Back3_Click(object sender, RoutedEventArgs e)
