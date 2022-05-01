@@ -149,7 +149,12 @@
 
         </Grid>
 
-        <Button Grid.Column="2" Margin="113,309,0,0" Grid.Row="1" VerticalAlignment="Top" Height="54" Width="185" Background="#45990000"  Click="Button_Click" Grid.RowSpan="2"/>
+        <Button Grid.Column="2" Margin="139,280,0,0" Grid.Row="1" VerticalAlignment="Top" Height="54" Width="185" Background="#45990000" 
+                Content="PUEBLO POLLA" Click="Button_Click"/>
+        <Button Grid.Column="2" Margin="47,0,0,0" Grid.Row="1" VerticalAlignment="Top" Height="54" Width="185" Background="#45990000" 
+                Content="PUEBLO POLLA" Click="Button_Click"/>
+        <Button Grid.Column="1" Margin="0,93,0,0" Grid.Row="1" VerticalAlignment="Top" Height="54" Width="185" Background="#45990000" 
+                Content="PUEBLO POLLA" Click="Button_Click"/>
 
         <Grid x:Name="Pause" Grid.RowSpan="3" Grid.ColumnSpan="3" Background="Black" Visibility="Collapsed" Opacity="0.7" CornerRadius="40" Margin="250,0,250,0">
 
