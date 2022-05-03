@@ -15,7 +15,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Canvas>
-            <Image Stretch="Fill" Source="/Assets/fondo.png" Height="1009" Width="1500"/>
+            <Image Stretch="Fill" Source="/Assets/city2.png" Height="1009" Width="1500"/>
         </Canvas>
         <Button Grid.Row="2" Margin="40,0,0,0"
             Click="Page1Return_OnClick">
