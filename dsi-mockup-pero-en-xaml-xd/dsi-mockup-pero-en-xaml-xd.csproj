@@ -164,6 +164,8 @@
     <Content Include="Assets\jugarBoton.png" />
     <Content Include="Assets\party.png" />
     <Content Include="Assets\party_hover.png" />
+    <Content Include="Assets\red_arrow.png" />
+    <Content Include="Assets\scribbleMap.png" />
     <Content Include="Assets\SplashScreen.png" />
     <Content Include="Assets\trueMap.png" />
     <Content Include="Properties\Default.rd.xml" />

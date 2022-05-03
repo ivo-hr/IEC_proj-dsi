@@ -167,28 +167,7 @@
     </Viewbox>
 
         <Viewbox Grid.Row="2"  Grid.Column="1">
-
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch" Background="Transparent" HorizontalAlignment="Left"  Grid.Row="2"  Grid.Column="0">
-                <Button Style="{StaticResource AbilityButton}">
-                    <Border BorderThickness="10" CornerRadius="10,10,10,10" BorderBrush="Black" Background="Red" RenderTransformOrigin="0.5,0.5" Margin="-55,-55,-55,-55">
-                        <TextBlock Text="1" HorizontalAlignment="Center" FontSize="60"/>
-                    </Border>
-                </Button>
-                <Button Style="{StaticResource AbilityButton}">
-                    <Border BorderThickness="10" CornerRadius="10,10,10,10" BorderBrush="Black" Background="Red" RenderTransformOrigin="0.5,0.5" Margin="-55,-55,-55,-55">
-                        <TextBlock Text="2" HorizontalAlignment="Center" FontSize="60"/>
-                    </Border>
-                </Button>
-                <Button Style="{StaticResource AbilityButton}">
-                    <Border BorderThickness="10" CornerRadius="10,10,10,10" BorderBrush="Black" Background="Red" RenderTransformOrigin="0.5,0.5" Margin="-55,-55,-55,-55">
-                        <TextBlock Text="3" HorizontalAlignment="Center" FontSize="60"/>
-                    </Border>
-                </Button>
-                <Button Style="{StaticResource AbilityButton}" Width="200" Height="200">
-                    <Border BorderThickness="10" CornerRadius="10,10,10,10" BorderBrush="Black" Background="Cyan" RenderTransformOrigin="0.5,0.5" Margin="-79,-79,-79,-79">
-                        <TextBlock Text="U" HorizontalAlignment="Center" FontSize="100"/>
-                    </Border>
-                </Button>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch" Background="Blue" HorizontalAlignment="Left"  Grid.Row="2"  Grid.Column="0">
             </StackPanel>
         </Viewbox>
         

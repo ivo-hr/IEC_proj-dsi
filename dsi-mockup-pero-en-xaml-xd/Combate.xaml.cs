@@ -65,5 +65,10 @@ namespace DSI_Mockup
             boton.BorderBrush = new SolidColorBrush(Colors.LightYellow);
             boton.BorderThickness = new Thickness(10);
         }
+
+        private void TextBlock_SelectionChanged()
+        {
+
+        }
     }
 }
