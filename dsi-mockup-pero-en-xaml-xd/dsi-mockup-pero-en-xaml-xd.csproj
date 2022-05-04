@@ -149,8 +149,13 @@
     <Content Include="Assets\Ability01.png" />
     <Content Include="Assets\Ability02.png" />
     <Content Include="Assets\Ability03.png" />
+    <Content Include="Assets\Ability04.png" />
+    <Content Include="Assets\arrow_counterclockwise.png" />
     <Content Include="Assets\blue_arrow.png" />
     <Content Include="Assets\bosque.png" />
+    <Content Include="Assets\campfire.png" />
+    <Content Include="Assets\card_rotate.png" />
+    <Content Include="Assets\card_tap_down.png" />
     <Content Include="Assets\city.png" />
     <Content Include="Assets\city2.png" />
     <Content Include="Assets\ContinuarBoton.png" />
@@ -168,9 +173,11 @@
     <Content Include="Assets\jugarBoton.png" />
     <Content Include="Assets\party.png" />
     <Content Include="Assets\party_hover.png" />
+    <Content Include="Assets\pawn_counterclockwise.png" />
     <Content Include="Assets\red_arrow.png" />
     <Content Include="Assets\scribbleMap.png" />
     <Content Include="Assets\SplashScreen.png" />
+    <Content Include="Assets\trees4.png" />
     <Content Include="Assets\trueMap.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
