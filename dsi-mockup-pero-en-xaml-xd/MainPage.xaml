@@ -45,7 +45,7 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <Image Grid.RowSpan="3" Grid.ColumnSpan="2" Stretch="UniformToFill" Source="/Assets/fondo.png"/>
+            <Image Grid.RowSpan="3" Grid.ColumnSpan="2" Stretch="UniformToFill" Source="/Assets/city2.png"/>
 
 
             <Viewbox>
