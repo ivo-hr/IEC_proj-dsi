@@ -43,22 +43,16 @@
         <Image Grid.ColumnSpan="3" Grid.RowSpan="3" Stretch="Fill" Source="/Assets/map.png"/>
 
         <StackPanel Grid.Row="0" Grid.Column="0" Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left">
-            <Button Style="{StaticResource GameButton}" Click="Menu_Click" Width="210">
+            <Button Style="{StaticResource GameButton}" Click="Menu_Click" Width="210" CornerRadius="0,0,20,0">
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95">
                     <FontIcon Glyph="&#xE8FD;" FontSize="40" />
                     <TextBlock Text=" MENU" FontSize="45" VerticalAlignment="Center"/>
                 </StackPanel>
-
             </Button>
         </StackPanel>
 
-
-
-
-
-
         <StackPanel Grid.Row="3" Grid.Column="0" Margin="0,0,0,0" VerticalAlignment="Bottom" HorizontalAlignment="Left">
-            <Button Style="{StaticResource GameButton}" Click="Pause_Click" Width="210">
+            <Button Style="{StaticResource GameButton}" Click="Pause_Click" Width="210" CornerRadius="0,20,0,0">
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95">
                     <FontIcon Glyph="&#59155;" FontSize="40" />
                     <TextBlock Text=" PAUSE" FontSize="45" VerticalAlignment="Center"/>
@@ -129,20 +123,15 @@
         </Grid>
 
 
-        <Button Grid.Column="2" Margin="5,0,0,117" Grid.Row="1" VerticalAlignment="Bottom" Height="54" Width="70" Click="Button_Click" Background="Transparent">
-            <Image Source="Assets/red_arrow.png" RenderTransformOrigin="0.5,0.5">
-                <Image.RenderTransform>
-                    <CompositeTransform Rotation="90"/>
-                </Image.RenderTransform>
-            </Image>
+        <Button Grid.Column="2" Margin="5,0,0,60" Grid.Row="1" VerticalAlignment="Bottom" Height="189" Width="245" Click="Button_Click" Background="Transparent">
+            <Image Source="Assets/LucharBandera.png"/>
         </Button>
-        <Button Grid.Column="0" Margin="0,0,150,150" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" Height="54" Width="70" Click="Button_Click" Background="Transparent">
-            <Image Source="Assets/green_arrow.png" RenderTransformOrigin="0.5,0.5">
-                <Image.RenderTransform>
-                    <CompositeTransform Rotation="90"/>
-                </Image.RenderTransform>
-            </Image>
+        <Button Grid.Column="1" Margin="184,0,0,226" Grid.Row="1" VerticalAlignment="Bottom" Height="189" Width="245" Click="Button_Click" Background="Transparent" Grid.RowSpan="2">
+            <Image Source="Assets/LucharBandera.png"/>
         </Button>
+        <Viewbox HorizontalAlignment="Right" Width="300" VerticalAlignment="Top" Grid.Column="3" Margin="10,10,10,10" Grid.ColumnSpan="1">
+            <Image Source="Assets/ContadorCiu.png"/>
+        </Viewbox>
         <Grid x:Name="Pause" Grid.RowSpan="3" Grid.ColumnSpan="3" Background="Black" Visibility="Collapsed" Opacity="0.7" CornerRadius="40" Margin="250,0,250,0">
 
             <Grid.RowDefinitions>

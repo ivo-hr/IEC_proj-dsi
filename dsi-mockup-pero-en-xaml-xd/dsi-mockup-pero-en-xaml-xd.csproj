@@ -151,6 +151,7 @@
     <Content Include="Assets\Ability03.png" />
     <Content Include="Assets\Ability04.png" />
     <Content Include="Assets\arrow_counterclockwise.png" />
+    <Content Include="Assets\arrow_right.png" />
     <Content Include="Assets\blue_arrow.png" />
     <Content Include="Assets\bosque.png" />
     <Content Include="Assets\campfire.png" />
@@ -158,6 +159,7 @@
     <Content Include="Assets\card_tap_down.png" />
     <Content Include="Assets\city.png" />
     <Content Include="Assets\city2.png" />
+    <Content Include="Assets\ContadorCiu.png" />
     <Content Include="Assets\ContinuarBoton.png" />
     <Content Include="Assets\Fireman.png" />
     <Content Include="Assets\fondo.png" />
@@ -169,8 +171,11 @@
     <Content Include="Assets\inv_hover.png" />
     <Content Include="Assets\log.png" />
     <Content Include="Assets\log_hover.png" />
+    <Content Include="Assets\LucharBandera.png" />
     <Content Include="Assets\map.png" />
     <Content Include="Assets\jugarBoton.png" />
+    <Content Include="Assets\MenuBoton.png" />
+    <Content Include="Assets\OpcionesBoton.png" />
     <Content Include="Assets\party.png" />
     <Content Include="Assets\party_hover.png" />
     <Content Include="Assets\pawn_counterclockwise.png" />

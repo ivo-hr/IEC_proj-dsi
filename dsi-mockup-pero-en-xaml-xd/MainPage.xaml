@@ -10,23 +10,23 @@
 
     <Page.Resources>
         <Style x:Key="BigButton" TargetType="Button">
-            <Setter Property="FontFamily" Value="Impact"/> 
-            <Setter Property="Background" Value="#252323"/>
-            <Setter Property="Foreground" Value="#CCAE97"/>
+            <Setter Property="FontFamily" Value="Impact"/>
+            <Setter Property="Background" Value="#191524"/>
+            <Setter Property="Foreground" Value="White"/>
             <Setter Property="Opacity" Value="0.8"/>
-            <Setter Property="CornerRadius" Value="5"/>
+            <Setter Property="CornerRadius" Value="15"/>
             <Setter Property="FontSize" Value="36"/>
             <Setter Property="Margin" Value="40,20,20,20" />
-            <Setter Property="Width" Value="180" />
+            <Setter Property="Width" Value="80" />
             <Setter Property="VerticalAlignment" Value="Top" />
         </Style>
         
         <Style x:Key="SmallButton" TargetType="Button">
             <Setter Property="FontFamily" Value="Impact"/>
-            <Setter Property="Background" Value="#252323"/>
-            <Setter Property="Foreground" Value="#CCAE97"/>
+            <Setter Property="Background" Value="#191524"/>
+            <Setter Property="Foreground" Value="#White"/>
             <Setter Property="Opacity" Value="0.8"/>
-            <Setter Property="CornerRadius" Value="5"/>
+            <Setter Property="CornerRadius" Value="15"/>
             <Setter Property="FontSize" Value="26"/>
             <Setter Property="Margin" Value="40,20,20,20" />
             <Setter Property="Width" Value="180" />
@@ -49,22 +49,21 @@
 
 
             <Viewbox>
-                <TextBlock Margin="20,20,20,20" Foreground="White" FontSize="60" FontWeight="ExtraBold"
-                     FontStyle="Italic" FontFamily="Cambria" Text="HEROES OF TODAY" Width="auto"/>
+                <Image Margin="20,10,10,10" Source="/Assets/SplashScreen.png" Width="300" Height="150"></Image>
             </Viewbox>
 
             <Viewbox Grid.Row="1"  Margin="40,0,0,0"   HorizontalAlignment="Left" VerticalAlignment="Center">
                 <StackPanel Orientation="Vertical">
-                <Button HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource BigButton}" Click="Button_Click" Width="300">
+                <Button HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource BigButton}" Click="Button_Click" Width="250">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock FontFamily="Impact" VerticalAlignment="Center">Comenzar</TextBlock>
-                        <Image Margin="20,10,10,10" Source="/Assets/jugarBoton.png" Width="30" Height="30"></Image>
+                            <Image Margin="20,10,10,10" Source="/Assets/Ability03.png" Width="30" Height="30"></Image>
                     </StackPanel>
                 </Button>
-                <Button HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource BigButton}" Click="Button_Click" Width="300" IsEnabled="false">
+                <Button HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource BigButton}" Click="Button_Click" Width="250" IsEnabled="false">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock FontFamily="Impact" VerticalAlignment="Center">Continuar</TextBlock>
-                        <Image Margin="20,10,10,10" Source="/Assets/ContinuarBoton.png" Width="35" Height="35"></Image>
+                            <Image Margin="20,10,10,10" Source="/Assets/arrow_right.png" Width="35" Height="35"></Image>
                     </StackPanel>
                 </Button>
             </StackPanel>
