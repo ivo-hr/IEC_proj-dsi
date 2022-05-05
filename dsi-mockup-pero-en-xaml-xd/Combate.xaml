@@ -84,7 +84,6 @@
             <RowDefinition Height="1.2*"/>
             <RowDefinition Height="0*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="0.3*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
@@ -219,21 +218,16 @@
                     </StackPanel>
                 </Button>
 
+                <Button Style="{StaticResource ExtraButton}" VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="150" Click="Button_Click" >
+                    <StackPanel Margin= "5" VerticalAlignment="Stretch" Orientation="Horizontal">
+                        <Image Source="/Assets/arrow_counterclockwise.png" Width="100" Height="100"/>
+
+                        <TextBlock Style="{StaticResource AbilityText}" Text="Huir" FontWeight="Bold" FontSize="70"/>
+                    </StackPanel>
+                </Button>
+
             </StackPanel>
         </Viewbox>
-
-
-
-        <Viewbox Grid.Row="4" VerticalAlignment="Bottom" HorizontalAlignment="Left">
-            <Button Style="{StaticResource ExtraButton}" VerticalAlignment="Center" Height="150" Width="400" Click="Button_Click" >
-                <StackPanel Margin= "5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Orientation="Horizontal">
-                    <Image Source="/Assets/arrow_counterclockwise.png" Width="100" Height="100"/>
-
-                    <TextBlock Style="{StaticResource AbilityText}" Text="Huir" FontWeight="Bold" FontSize="70"/>
-                </StackPanel>
-            </Button>
-        </Viewbox>
-
     </Grid>
 </Page>
 
