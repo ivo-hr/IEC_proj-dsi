@@ -81,7 +81,7 @@
     <Grid Background="#2D3A5B">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="1.2*"/>
             <RowDefinition Height="0*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="0.3*"/>
@@ -104,43 +104,27 @@
                 <Button x:Name="fireman"  Style="{StaticResource SmallButton}" Width="165" Height="300" Margin="0, 0, 0, 0" Background="Transparent" Click="Border_Click">
                     <StackPanel>
                         <Image Source="/Assets/PersonajeSelector.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill"/>
-                        <Image Source="/Assets/Fireman.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
-                            <Image.RenderTransform>
-                                <ScaleTransform ScaleX="-1"/>
-                            </Image.RenderTransform>
-                        </Image>
+                        <Image Source="/Assets/Fireman.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill"/>
                     </StackPanel>
                 </Button>
-                
+
                 <Button x:Name="Medic" Style="{StaticResource SmallButton}" Width="165" Height="300" Margin="0, 0, 0, 0" Background="Transparent" Click="Border_Click">
                     <StackPanel>
                         <Image Source="/Assets/PersonajeSelector.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill"/>
-                        <Image Source="/Assets/Fireman.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
-                        <Image.RenderTransform>
-                            <ScaleTransform ScaleX="-1"/>
-                        </Image.RenderTransform>
-                    </Image>
+                        <Image Source="/Assets/Fireman02.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill"/>
                     </StackPanel>
                 </Button>
 
                 <Button x:Name="Police" Style="{StaticResource SmallButton}" Width="165" Height="300" Margin="0, 0, 0, 0" Background="Transparent" Click="Border_Click">
                     <StackPanel>
                         <Image Source="/Assets/PersonajeSelector.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill"/>
-                        <Image Source="/Assets/Fireman.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
-                            <Image.RenderTransform>
-                                <ScaleTransform ScaleX="-1"/>
-                            </Image.RenderTransform>
-                        </Image>
+                        <Image Source="/Assets/Fireman03.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill"/>
                     </StackPanel>
                 </Button>
                 <Button x:Name="Army" Style="{StaticResource SmallButton}" Width="165" Height="300" Margin="0, 0, 0, 0" Background="Transparent" Click="Border_Click">
                     <StackPanel>
                         <Image Source="/Assets/PersonajeSelector.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill"/>
-                        <Image Source="/Assets/Fireman.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
-                            <Image.RenderTransform>
-                                <ScaleTransform ScaleX="-1"/>
-                            </Image.RenderTransform>
-                        </Image>
+                        <Image Source="/Assets/Fireman02.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill"/>
                     </StackPanel>
                 </Button>
             </StackPanel>
@@ -151,28 +135,28 @@
                 <Button x:Name="ene1" Style="{StaticResource SmallButton}" Width="180" Height="300" Margin="0, 0, 0, 0" Background="Transparent" Click="EneBorder_Click">
                     <StackPanel>
                         <Image Source="/Assets/EnemigoSelector.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill"/>
-                        <Image Source="/Assets/fuego.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+                        <Image Source="/Assets/fuego02.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
                         </Image>
                     </StackPanel>
                 </Button>
                 <Button x:Name="ene2" Style="{StaticResource SmallButton}" Width="180" Height="300" Margin="0, 0, 0, 0" Background="Transparent" Click="EneBorder_Click">
                     <StackPanel>
                         <Image Source="/Assets/EnemigoSelector.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill"/>
-                        <Image Source="/Assets/fuego.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+                        <Image Source="/Assets/fuego02.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
                         </Image>
                     </StackPanel>
                 </Button>
                 <Button x:Name="ene3" Style="{StaticResource SmallButton}" Width="180" Height="300" Margin="0, 0, 0, 0" Background="Transparent" Click="EneBorder_Click">
                     <StackPanel>
                         <Image Source="/Assets/EnemigoSelector.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill"/>
-                        <Image Source="/Assets/fuego.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+                        <Image Source="/Assets/fuego02.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
                         </Image>
                     </StackPanel>
                 </Button>
                 <Button x:Name="ene4" Style="{StaticResource SmallButton}" Width="180" Height="300" Margin="0, 0, 0, 0" Background="Transparent" Click="EneBorder_Click">
                     <StackPanel>
                         <Image Source="/Assets/EnemigoSelector.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill"/>
-                        <Image Source="/Assets/fuego.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+                        <Image Source="/Assets/fuego02.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
                         </Image>
                     </StackPanel>
                 </Button>
@@ -185,7 +169,7 @@
                     <StackPanel Margin= "5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                         <Image Source="/Assets/Ability00.png" Width="100" Height="100"/>
                         <TextBlock Style="{StaticResource AbilityText}" Text="Ability 1 " FontWeight="Bold"/>
-                        <TextBlock Style="{StaticResource AbilityText}" Text = "Robas dinero al gobierno lmao abajo el gobierno lmao"  HorizontalAlignment="Center" TextAlignment="Center"  FontStretch="Condensed" TextWrapping="Wrap" FontSize="20" />
+                        <TextBlock Style="{StaticResource AbilityText}" Text = "Robas dinero al enemigo sin que se de cuenta"  HorizontalAlignment="Center" TextAlignment="Center"  FontStretch="Condensed" TextWrapping="Wrap" FontSize="20" />
                     </StackPanel>
                 </Button>
                 <Button Style="{StaticResource AbilityButton}" VerticalAlignment="Center" Height="300" Width="200" >
@@ -215,6 +199,10 @@
         <Viewbox Grid.Row="3"  Grid.Column="1" >
             <Image Source="/Assets/InventarioTemp.png" HorizontalAlignment="Center"/>
         </Viewbox>
+        <!-- TURNOS -->
+        <Viewbox Grid.Row="0"  Grid.Column="1"  HorizontalAlignment="Left"   >
+            <Image Source="/Assets/TurnosUI.png" Height="31" VerticalAlignment="Top" Width="16" Margin="5,0,0,0"/>
+        </Viewbox>
         <Viewbox Grid.Row="3"  Grid.Column="3">
             <!-- EXTRA -->
             <StackPanel>
@@ -232,14 +220,15 @@
                 </Button>
 
             </StackPanel>
-
-
         </Viewbox>
 
+
+
         <Viewbox Grid.Row="4" VerticalAlignment="Bottom" HorizontalAlignment="Left">
-            <Button Style="{StaticResource ExtraButton}" VerticalAlignment="Center" Height="150" Width="400" >
+            <Button Style="{StaticResource ExtraButton}" VerticalAlignment="Center" Height="150" Width="400" Click="Button_Click" >
                 <StackPanel Margin= "5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Orientation="Horizontal">
                     <Image Source="/Assets/arrow_counterclockwise.png" Width="100" Height="100"/>
+
                     <TextBlock Style="{StaticResource AbilityText}" Text="Huir" FontWeight="Bold" FontSize="70"/>
                 </StackPanel>
             </Button>
