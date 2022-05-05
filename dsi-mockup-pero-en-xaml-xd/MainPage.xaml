@@ -75,6 +75,8 @@
                     Click="Page1Options_Click" Width="120" FontSize="20" />
                     <Button Content="Créditos" Style="{StaticResource SmallButton}"
                     Click="Page1Credits_Click" Width="120" FontSize="20" />
+                    <Button Content="Salir" Style="{StaticResource SmallButton}" Background="#aa1524"
+                    Click="Button_Exit" Width="120" FontSize="20" />
             </StackPanel>
             </Viewbox>
         </Grid>

@@ -50,5 +50,10 @@ namespace DSI_Mockup
         {
             Frame.Navigate(typeof(PaginaUnoTrans));
         }
+
+        private void Button_Exit(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Exit();
+        }
     }
 }
