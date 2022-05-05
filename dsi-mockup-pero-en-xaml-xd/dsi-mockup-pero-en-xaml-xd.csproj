@@ -161,6 +161,7 @@
     <Content Include="Assets\city2.png" />
     <Content Include="Assets\ContadorCiu.png" />
     <Content Include="Assets\ContinuarBoton.png" />
+    <Content Include="Assets\EnemigoSelector.png" />
     <Content Include="Assets\Fireman.png" />
     <Content Include="Assets\fondo.png" />
     <Content Include="Assets\Blck.png" />
@@ -168,6 +169,7 @@
     <Content Include="Assets\gameplai.jpg" />
     <Content Include="Assets\green_arrow.png" />
     <Content Include="Assets\inv.png" />
+    <Content Include="Assets\InventarioTemp.png" />
     <Content Include="Assets\inv_hover.png" />
     <Content Include="Assets\log.png" />
     <Content Include="Assets\log_hover.png" />
@@ -179,6 +181,7 @@
     <Content Include="Assets\party.png" />
     <Content Include="Assets\party_hover.png" />
     <Content Include="Assets\pawn_counterclockwise.png" />
+    <Content Include="Assets\PersonajeSelector.png" />
     <Content Include="Assets\red_arrow.png" />
     <Content Include="Assets\scribbleMap.png" />
     <Content Include="Assets\SplashScreen.png" />
