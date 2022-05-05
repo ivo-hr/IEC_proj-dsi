@@ -101,54 +101,80 @@
         <!-- PERSONAJES -->
         <Viewbox Grid.Row="1" VerticalAlignment="Center" Grid.Column="0">
             <StackPanel  Height="334" Orientation ="Horizontal">
-                <Button x:Name="fireman"  Style="{StaticResource SmallButton}" Width="165" Height="250" Margin="0, 0, 0, 0" Background="Transparent" Click="Border_Click">
-                    <Image Source="/Assets/Fireman.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
-                        <Image.RenderTransform>
-                            <ScaleTransform ScaleX="-1"/>
-                        </Image.RenderTransform>
-                    </Image>
+                <Button x:Name="fireman"  Style="{StaticResource SmallButton}" Width="165" Height="300" Margin="0, 0, 0, 0" Background="Transparent" Click="Border_Click">
+                    <StackPanel>
+                        <Image Source="/Assets/PersonajeSelector.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill"/>
+                        <Image Source="/Assets/Fireman.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+                            <Image.RenderTransform>
+                                <ScaleTransform ScaleX="-1"/>
+                            </Image.RenderTransform>
+                        </Image>
+                    </StackPanel>
                 </Button>
-                <Button x:Name="Medic" Style="{StaticResource SmallButton}" Width="165" Height="250" Margin="0, 0, 0, 0" Background="Transparent" Click="Border_Click">
-                    <Image Source="/Assets/Fireman.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+                
+                <Button x:Name="Medic" Style="{StaticResource SmallButton}" Width="165" Height="300" Margin="0, 0, 0, 0" Background="Transparent" Click="Border_Click">
+                    <StackPanel>
+                        <Image Source="/Assets/PersonajeSelector.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill"/>
+                        <Image Source="/Assets/Fireman.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
                         <Image.RenderTransform>
                             <ScaleTransform ScaleX="-1"/>
                         </Image.RenderTransform>
                     </Image>
+                    </StackPanel>
                 </Button>
-                <Button x:Name="Police" Style="{StaticResource SmallButton}" Width="165" Height="250" Margin="0, 0, 0, 0" Background="Transparent" Click="Border_Click">
-                    <Image Source="/Assets/Fireman.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
-                        <Image.RenderTransform>
-                            <ScaleTransform ScaleX="-1"/>
-                        </Image.RenderTransform>
-                    </Image>
+
+                <Button x:Name="Police" Style="{StaticResource SmallButton}" Width="165" Height="300" Margin="0, 0, 0, 0" Background="Transparent" Click="Border_Click">
+                    <StackPanel>
+                        <Image Source="/Assets/PersonajeSelector.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill"/>
+                        <Image Source="/Assets/Fireman.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+                            <Image.RenderTransform>
+                                <ScaleTransform ScaleX="-1"/>
+                            </Image.RenderTransform>
+                        </Image>
+                    </StackPanel>
                 </Button>
-                <Button x:Name="Army" Style="{StaticResource SmallButton}" Width="165" Height="250" Margin="0, 0, 0, 0" Background="Transparent" Click="Border_Click">
-                    <Image Source="/Assets/Fireman.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
-                        <Image.RenderTransform>
-                            <ScaleTransform ScaleX="-1"/>
-                        </Image.RenderTransform>
-                    </Image>
+                <Button x:Name="Army" Style="{StaticResource SmallButton}" Width="165" Height="300" Margin="0, 0, 0, 0" Background="Transparent" Click="Border_Click">
+                    <StackPanel>
+                        <Image Source="/Assets/PersonajeSelector.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill"/>
+                        <Image Source="/Assets/Fireman.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+                            <Image.RenderTransform>
+                                <ScaleTransform ScaleX="-1"/>
+                            </Image.RenderTransform>
+                        </Image>
+                    </StackPanel>
                 </Button>
             </StackPanel>
         </Viewbox>
         <!-- ENEMIGOS -->
         <Viewbox Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right"  Grid.Column="1" Grid.ColumnSpan="2">
             <StackPanel  Orientation ="Horizontal"  Height="334">
-                <Button x:Name="ene1" Style="{StaticResource SmallButton}" Width="180" Height="250" Margin="0, 0, 0, 0" Background="Transparent" Click="EneBorder_Click">
-                    <Image Source="/Assets/fuego.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
-                    </Image>
+                <Button x:Name="ene1" Style="{StaticResource SmallButton}" Width="180" Height="300" Margin="0, 0, 0, 0" Background="Transparent" Click="EneBorder_Click">
+                    <StackPanel>
+                        <Image Source="/Assets/EnemigoSelector.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill"/>
+                        <Image Source="/Assets/fuego.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+                        </Image>
+                    </StackPanel>
                 </Button>
-                <Button x:Name="ene2" Style="{StaticResource SmallButton}" Width="180" Height="250" Margin="0, 0, 0, 0" Background="Transparent" Click="EneBorder_Click">
-                    <Image Source="/Assets/fuego.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
-                    </Image>
+                <Button x:Name="ene2" Style="{StaticResource SmallButton}" Width="180" Height="300" Margin="0, 0, 0, 0" Background="Transparent" Click="EneBorder_Click">
+                    <StackPanel>
+                        <Image Source="/Assets/EnemigoSelector.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill"/>
+                        <Image Source="/Assets/fuego.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+                        </Image>
+                    </StackPanel>
                 </Button>
-                <Button x:Name="ene3" Style="{StaticResource SmallButton}" Width="180" Height="250" Margin="0, 0, 0, 0" Background="Transparent" Click="EneBorder_Click">
-                    <Image Source="/Assets/fuego.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
-                    </Image>
+                <Button x:Name="ene3" Style="{StaticResource SmallButton}" Width="180" Height="300" Margin="0, 0, 0, 0" Background="Transparent" Click="EneBorder_Click">
+                    <StackPanel>
+                        <Image Source="/Assets/EnemigoSelector.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill"/>
+                        <Image Source="/Assets/fuego.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+                        </Image>
+                    </StackPanel>
                 </Button>
-                <Button x:Name="ene4" Style="{StaticResource SmallButton}" Width="180" Height="250" Margin="0, 0, 0, 0" Background="Transparent" Click="EneBorder_Click">
-                    <Image Source="/Assets/fuego.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
-                    </Image>
+                <Button x:Name="ene4" Style="{StaticResource SmallButton}" Width="180" Height="300" Margin="0, 0, 0, 0" Background="Transparent" Click="EneBorder_Click">
+                    <StackPanel>
+                        <Image Source="/Assets/EnemigoSelector.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill"/>
+                        <Image Source="/Assets/fuego.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+                        </Image>
+                    </StackPanel>
                 </Button>
             </StackPanel>
         </Viewbox>
