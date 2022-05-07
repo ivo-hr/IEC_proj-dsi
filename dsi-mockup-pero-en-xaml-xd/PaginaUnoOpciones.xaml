@@ -7,7 +7,15 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    
+    <Page.Resources>
+        <Style x:Key="BackgroundRect" TargetType="Rectangle">
+            <Setter Property="Fill" Value="#191524"/>
+            <Setter Property="StrokeThickness" Value="3"/>
+            <Setter Property="RadiusX" Value="30"/>
+            <Setter Property="RadiusY" Value="30"/>
+        </Style>
+    </Page.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
@@ -22,30 +30,35 @@
             <SymbolIcon Symbol="Back" />
         </Button>
         <TextBlock Grid.Row="0" Foreground="White" FontSize="80" FontWeight="ExtraBold" HorizontalAlignment="Left" 
-                   VerticalAlignment="Center" FontStyle="Italic" FontFamily="Cambria"  Text="Opciones"/>
+                   VerticalAlignment="Center" FontFamily="Impact"  Text="Opciones" Margin="20,20,20,20"/>
+        <Viewbox Grid.Row="1" >
+            <Rectangle Width="300" Height="300" Style="{StaticResource BackgroundRect}"/>
+        </Viewbox>
         <Viewbox Grid.Row="1">
-        <StackPanel Width="300" Margin="120"  >
-            <TextBlock Text="Volumen de Musica:" Margin="0,0,0,5"/>
-            <Slider x:Name="sliderMusic" Background="Black"
-            Minimum="0" 
-            Maximum="10" 
-            Value=" 8"/>
-            <TextBlock Text="Volumen SFX :" Margin="0,0,0,5"/>
-            <Slider x:Name="sliderSFX" Background="Black"
-            Minimum="0" 
-            Maximum="10" 
-            Value=" 4"/>
-            <TextBlock Text="Velocidad Texto" Margin="0,0,0,5"/>
-            <Slider x:Name="sliderTextSpeed" Background="Black"
-            Minimum="0" 
-            Maximum="3" 
-            Value="2"/>
-            <TextBlock Text="Cantidad Efectos Visuales:" Margin="0,0,0,5"/>
-            <Slider x:Name="sliderSliderVFX" Background="Black"
-            Minimum="0" 
-            Maximum="9"
-            Value="9"/>
-        </StackPanel>
+            <StackPanel HorizontalAlignment="Stretch" Margin="20,20,20,20"  >
+                <TextBlock Text="Volumen de Musica:" Margin="0,0,0,5"/>
+                <Slider x:Name="sliderMusic" Background="Black"
+                Minimum="0" 
+                Maximum="10" 
+                Value=" 8"/>
+                <TextBlock Text="Volumen SFX :" Margin="0,0,0,5"/>
+                <Slider x:Name="sliderSFX" Background="Black"
+                Minimum="0" 
+                Maximum="10" 
+                Value=" 4"/>
+                <TextBlock Text="Velocidad Texto" Margin="0,0,0,5"/>
+                <Slider x:Name="sliderTextSpeed" Background="Black"
+                Minimum="0" 
+                Maximum="3" 
+                Value="2"/>
+                <TextBlock Text="Cantidad Efectos Visuales:" Margin="0,0,0,5"/>
+                <ComboBox SelectedIndex="0" HorizontalAlignment="Center">
+                    <ComboBoxItem Content="Muy Alta"/>
+                    <ComboBoxItem Content="Alta"/>
+                    <ComboBoxItem Content="Media"/>
+                    <ComboBoxItem Content="Baja"/>
+                </ComboBox>
+            </StackPanel>
         </Viewbox>
     </Grid>
 </Page>
