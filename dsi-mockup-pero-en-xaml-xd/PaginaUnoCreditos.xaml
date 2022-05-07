@@ -8,6 +8,15 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    <Page.Resources>
+        <Style x:Key="BackgroundRect" TargetType="Rectangle">
+            <Setter Property="Fill" Value="#191524"/>
+            <Setter Property="StrokeThickness" Value="3"/>
+            <Setter Property="RadiusX" Value="30"/>
+            <Setter Property="RadiusY" Value="30"/>
+        </Style>
+    </Page.Resources>
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -26,8 +35,9 @@
         </Viewbox>
 
         <Viewbox Grid.Row="1">
-        <StackPanel  VerticalAlignment="Center" HorizontalAlignment="Center">
-            <TextBlock FontSize="40" TextAlignment="Center">
+            <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Rectangle Width="300" Height="300" Style="{StaticResource BackgroundRect}"/>
+                <TextBlock FontSize="40" TextAlignment="Center">
                 <Bold>Documentacion</Bold>
                 <LineBreak />
                 Jacobo
@@ -50,10 +60,9 @@
                 <LineBreak />
                 Henry
                 <LineBreak />
-                Eduardo de 
-                
-            </TextBlock>
-        </StackPanel>
+                Eduardo de
+                </TextBlock>
+            </StackPanel>
         </Viewbox>
 
 
