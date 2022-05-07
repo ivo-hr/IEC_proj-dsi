@@ -33,5 +33,10 @@ namespace DSI_Mockup
                 Frame.GoBack();
             }
         }
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

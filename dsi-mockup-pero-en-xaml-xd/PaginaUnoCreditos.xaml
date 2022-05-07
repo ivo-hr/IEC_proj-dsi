@@ -20,7 +20,7 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="4*"/>
+            <RowDefinition Height="6*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Canvas>
@@ -29,15 +29,16 @@
         <Viewbox>
             <StackPanel Grid.Row="0" Margin="40,0,0,0" VerticalAlignment="Center">
             <TextBlock Foreground="White" FontSize="80" FontWeight="ExtraBold" HorizontalAlignment="Left"
-                       FontStyle="Italic" FontFamily="Cambria" 
-                       Text="Créditos"/>
+                       FontFamily="Impact" Text="Créditos" SelectionChanged="TextBlock_SelectionChanged"/>
         </StackPanel>
         </Viewbox>
 
-        <Viewbox Grid.Row="1">
-            <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-                <Rectangle Width="300" Height="300" Style="{StaticResource BackgroundRect}"/>
-                    <TextBlock FontSize="40" TextAlignment="Center"  >
+        <Viewbox Grid.Row="1" >
+                <Rectangle Width="200" Height="300" Style="{StaticResource BackgroundRect}"/>
+        </Viewbox>
+        <Viewbox  Grid.Row="1">
+        <StackPanel>
+            <TextBlock FontSize="40" TextAlignment="Center" Margin="20,20,20,20">
                 <Bold>Documentacion</Bold>
                 <LineBreak />
                 Jacobo
@@ -64,9 +65,9 @@
                 </TextBlock>
             </StackPanel>
         </Viewbox>
+        
 
-
-        <Button Grid.Row="2" Margin="40,0,0,0"
+            <Button Grid.Row="2" Margin="40,0,0,0"
             Click="Page1Return_OnClick">
             <SymbolIcon Symbol="Back" />
         </Button>
