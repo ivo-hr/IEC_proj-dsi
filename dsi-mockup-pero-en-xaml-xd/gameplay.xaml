@@ -92,7 +92,7 @@
                     PointerExited="stopHover">
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="300">
                         <FontIcon Glyph="&#xE8A9;" FontSize="40" />
-                        <TextBlock Text=" inventory" FontSize="45" VerticalAlignment="Center"/>
+                        <TextBlock Text=" Inventario" FontSize="45" VerticalAlignment="Center" SelectionChanged="TextBlock_SelectionChanged"/>
                     </StackPanel>
                 </Button>
 
@@ -101,7 +101,7 @@
                     PointerExited="stopHover">
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="300">
                         <FontIcon Glyph="&#xE716;" FontSize="40" />
-                        <TextBlock Text=" party" FontSize="45" VerticalAlignment="Center"/>
+                        <TextBlock Text=" Equipo" FontSize="45" VerticalAlignment="Center"/>
                     </StackPanel>
                 </Button>
 
@@ -110,7 +110,7 @@
                     PointerExited="stopHover">
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="95">
                         <FontIcon Glyph="&#xE8A4;" FontSize="40" />
-                        <TextBlock Text="Panel de Misiones" FontSize="45" VerticalAlignment="Center"/>
+                        <TextBlock Text=" Panel de Misiones" FontSize="45" VerticalAlignment="Center"/>
                     </StackPanel>
                 </Button>
             </StackPanel>
@@ -124,8 +124,8 @@
 
 
             <Button Style="{StaticResource GameButton}" Click="Back_Click" Grid.Row="6">
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="300">
-                    <FontIcon Glyph="&#xE7A7;" FontSize="40" />
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Width="auto">
+                    <FontIcon Glyph="&#xE7A7;" FontSize="40"  HorizontalAlignment="Left"/>
                     <TextBlock Text=" back" FontSize="45" VerticalAlignment="Center"/>
                 </StackPanel>
             </Button>

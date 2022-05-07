@@ -163,6 +163,11 @@ namespace DSI_Mockup
         {
             Party.Visibility = Visibility.Collapsed;
         }
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 
 
