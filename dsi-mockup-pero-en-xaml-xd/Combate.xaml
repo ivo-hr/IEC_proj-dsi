@@ -99,7 +99,8 @@
         <!-- PERSONAJES -->
         <Viewbox Grid.Row="1" VerticalAlignment="Center" Grid.Column="0">
             <StackPanel  Height="334" Orientation ="Horizontal">
-                <Button x:Name="fireman"  Style="{StaticResource SmallButton}" Width="165" Height="300" Margin="0, 0, 0, 0" Background="Transparent" Click="Border_Click">
+                <Button x:Name="fireman"  Style="{StaticResource SmallButton}" Width="165" Height="300" Margin="0, 0, 0, 0" Background="Transparent" 
+                        Click="Border_Click">
                     <StackPanel>
                         <Image Source="/Assets/PersonajeSelector.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill"/>
                         <Image Source="/Assets/Fireman.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill"/>
@@ -167,28 +168,28 @@
                     <StackPanel Margin= "5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                         <Image Source="/Assets/Ability00.png" Width="100" Height="100"/>
                         <TextBlock Style="{StaticResource AbilityText}" Text="Ability 1 " FontWeight="Bold"/>
-                        <TextBlock Style="{StaticResource AbilityText}" Text = "Robas dinero al enemigo sin que se de cuenta"  HorizontalAlignment="Center" TextAlignment="Center"  FontStretch="Condensed" TextWrapping="Wrap" FontSize="20" />
+                        <TextBlock x:Name="abil1Desc" Style="{StaticResource AbilityText}" Text = "Robas dinero al enemigo sin que se de cuenta"  HorizontalAlignment="Center" TextAlignment="Center"  FontStretch="Condensed" TextWrapping="Wrap" FontSize="20" />
                     </StackPanel>
                 </Button>
                 <Button Style="{StaticResource AbilityButton}" VerticalAlignment="Center" Height="300" Width="200" >
                     <StackPanel Margin= "5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                         <Image Source="/Assets/Ability01.png" Width="100" Height="100"/>
                         <TextBlock Style="{StaticResource AbilityText}" Text="Ability 1 " FontWeight="Bold"/>
-                        <TextBlock Style="{StaticResource AbilityText}" Text = "Te comes una mansanita y mueres alaverga"  HorizontalAlignment="Center" TextAlignment="Center"  FontStretch="Condensed" TextWrapping="Wrap" FontSize="20" />
+                        <TextBlock x:Name="abil2Desc" Style="{StaticResource AbilityText}" Text = "Te comes una mansanita y mueres alaverga"  HorizontalAlignment="Center" TextAlignment="Center"  FontStretch="Condensed" TextWrapping="Wrap" FontSize="20" />
                     </StackPanel>
                 </Button>
                 <Button Style="{StaticResource AbilityButton}" VerticalAlignment="Center" Height="300" Width="200" >
                     <StackPanel Margin= "5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                         <Image Source="/Assets/Ability02.png" Width="100" Height="100"/>
                         <TextBlock Style="{StaticResource AbilityText}" Text="Ability 1 " FontWeight="Bold"/>
-                        <TextBlock Style="{StaticResource AbilityText}" Text = "Bajas la defensa del rival"  HorizontalAlignment="Center" TextAlignment="Center"  FontStretch="Condensed" TextWrapping="Wrap" FontSize="20" />
+                        <TextBlock x:Name="abil3Desc" Style="{StaticResource AbilityText}" Text = "Bajas la defensa del rival"  HorizontalAlignment="Center" TextAlignment="Center"  FontStretch="Condensed" TextWrapping="Wrap" FontSize="20" />
                     </StackPanel>
                 </Button>
                 <Button Style="{StaticResource SpecialAbilityButton}" VerticalAlignment="Center" Height="300" Width="200" >
                     <StackPanel Margin= "5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                         <Image Source="/Assets/Ability03.png" Width="100" Height="100"/>
                         <TextBlock Style="{StaticResource AbilityText}" Text="ULTRA " FontWeight="Bold"/>
-                        <TextBlock Style="{StaticResource AbilityText}" Text = "Mega ability tope de wapa increible la ostia dirian algunos ggez"  FontSize="20" />
+                        <TextBlock x:Name="specAbilDesc" Style="{StaticResource AbilityText}" Text = "Mega ability tope de wapa increible la ostia dirian algunos ggez"  FontSize="20" />
                     </StackPanel>
                 </Button>
             </StackPanel>
