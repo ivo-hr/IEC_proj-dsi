@@ -90,8 +90,8 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
+        <Canvas x:Name="MiCanvas" Grid.ColumnSpan="3" Grid.RowSpan="2" AllowDrop="True" DragOver="MiCanvas_DragOver" Drop="MiCanvas_Drop"/>
         <Image Grid.ColumnSpan="3" Grid.RowSpan="2" Stretch="Fill" Source="/Assets/trees4.png"/>
-
         <Viewbox>
             <StackPanel Grid.Row="0" Margin="40,0,0,0" VerticalAlignment="Center"/>
         </Viewbox>
@@ -196,7 +196,38 @@
         </Viewbox>
         <!-- INVENTORY -->
         <Viewbox Grid.Row="3"  Grid.Column="1" >
-            <Image Source="/Assets/InventarioTemp.png" HorizontalAlignment="Center"/>
+            <Grid x:Name="MiStack">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="/Assets/InventarioTemp.png" HorizontalAlignment="Center" Grid.ColumnSpan="2" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <ContentControl x:Name="Wood" CanDrag="True" DragStarting="Inventario_DragStarting" UseSystemFocusVisuals="True">
+                        <Image Source="/Assets/Ability03.png" Stretch="Fill" Height="125" Width="138"/>
+                    </ContentControl>
+                    <ContentControl x:Name="Bow" CanDrag="True" DragStarting="Inventario_DragStarting" UseSystemFocusVisuals="True" Grid.Column="1">
+                    </ContentControl>
+                    <ContentControl x:Name="Fire" CanDrag="True" DragStarting="Inventario_DragStarting" UseSystemFocusVisuals="True" Grid.Column="2">
+                    </ContentControl>
+                    <ContentControl x:Name="Brick" CanDrag="True" DragStarting="Inventario_DragStarting" UseSystemFocusVisuals="True" Grid.Row="1">
+                    </ContentControl>
+                    <ContentControl x:Name="Apple" CanDrag="True" DragStarting="Inventario_DragStarting" UseSystemFocusVisuals="True" Grid.Column="1" Grid.Row="1">
+                    </ContentControl>
+                    <ContentControl x:Name="Money" CanDrag="True" DragStarting="Inventario_DragStarting" UseSystemFocusVisuals="True" Grid.Column="2" Grid.Row="1">
+                    </ContentControl>
+                </Grid>
+            </Grid>
         </Viewbox>
         <!-- TURNOS -->
         <Viewbox Grid.Row="0"  Grid.Column="1"  HorizontalAlignment="Left"   >

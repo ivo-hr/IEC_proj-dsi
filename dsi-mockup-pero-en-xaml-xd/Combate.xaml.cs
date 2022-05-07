@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.ApplicationModel.DataTransfer;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -98,6 +99,39 @@ namespace DSI_Mockup
         private void TextBlock_SelectionChanged()
         {
 
+        }
+
+        private void Inventario_DragStarting(UIElement sender, DragStartingEventArgs args)
+        {
+            ContentControl mov = sender as ContentControl;
+
+            args.Data.SetText(mov.Name);
+
+            args.Data.RequestedOperation = DataPackageOperation.Copy;
+        }
+
+        private void MiCanvas_DragOver(object sender, DragEventArgs e)
+        {
+            e.AcceptedOperation = DataPackageOperation.Copy;
+        }
+
+        private async void MiCanvas_Drop(object sender, DragEventArgs e)
+        {
+            var objN = await e.DataView.GetTextAsync();
+            ContentControl obj = FindName(objN.ToString()) as ContentControl;
+
+            Point pnt = e.GetPosition(MiCanvas);
+
+            if (obj.Parent == MiStack)
+            {
+                MiStack.Children.Remove(obj);
+                MiCanvas.Children.Add(obj);
+            }
+
+            obj.SetValue(Canvas.LeftProperty, pnt.X - 150);
+            obj.SetValue(Canvas.TopProperty, pnt.Y - 150);
+
+            MiCanvas.Children.Remove(obj);
         }
     }
 }
