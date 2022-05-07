@@ -188,13 +188,12 @@
     <Content Include="Assets\party_hover.png" />
     <Content Include="Assets\pawn_counterclockwise.png" />
     <Content Include="Assets\PersonajeSelector.png" />
-    <Content Include="Assets\Policeman_Male.png" />
     <Content Include="Assets\red_arrow.png" />
-    <Content Include="Assets\scribbleMap.png" />
-    <Content Include="Assets\Special_Force.png" />
+    <Content Include="Assets\resource_apple.png" />
+    <Content Include="Assets\resource_iron.png" />
+    <Content Include="Assets\resource_lumber.png" />
     <Content Include="Assets\SplashScreen.png" />
     <Content Include="Assets\trees4.png" />
-    <Content Include="Assets\trueMap.png" />
     <Content Include="Assets\TurnosUI.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />

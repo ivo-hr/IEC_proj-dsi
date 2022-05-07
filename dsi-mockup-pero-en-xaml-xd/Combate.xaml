@@ -90,13 +90,11 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Canvas x:Name="MiCanvas" Grid.ColumnSpan="3" Grid.RowSpan="2" AllowDrop="True" DragOver="MiCanvas_DragOver" Drop="MiCanvas_Drop">
-            <Image Source="/Assets/trees4.png"/>
-        </Canvas>
+        <Image Source="/Assets/trees4.png" Stretch="UniformToFill" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
 
         <!-- PERSONAJES -->
         <Viewbox Grid.Row="1" VerticalAlignment="Center" Grid.Column="0">
-            <StackPanel  Height="334" Orientation ="Horizontal">
+            <StackPanel x:Name="MiCanvas" Height="334" Orientation ="Horizontal" AllowDrop="True" DragOver="MiCanvas_DragOver" Drop="MiCanvas_Drop">
                 <Button x:Name="fireman"  Style="{StaticResource SmallButton}" Width="165" Height="300" Margin="0, 0, 0, 0" Background="Transparent" 
                         Click="Border_Click">
                     <StackPanel>
@@ -194,13 +192,13 @@
         </Viewbox>
         <!-- INVENTORY -->
         <Viewbox Grid.Row="3" Grid.Column="1" >
-            <Grid  x:Name="MiStack">
+            <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="50"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Image Source="/Assets/InventarioTemp.png" HorizontalAlignment="Left" Grid.ColumnSpan="2" />
-                <Grid>
+                <Grid  x:Name="MiStack">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
@@ -211,18 +209,23 @@
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
 
-                    <ContentControl x:Name="Wood" CanDrag="True" DragStarting="Inventario_DragStarting"  UseSystemFocusVisuals="True" Height="125" Width="138">
-                        <Image Source="/Assets/Ability03.png"  />
+                    <ContentControl x:Name="Wood" CanDrag="True" DragStarting="Inventario_DragStarting"  UseSystemFocusVisuals="True" Height="100" Width="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                        <Image Source="/Assets/resource_lumber.png"/>
                     </ContentControl>
-                    <ContentControl x:Name="Bow" CanDrag="True" DragStarting="Inventario_DragStarting" UseSystemFocusVisuals="True" Grid.Column="1">
+                    <ContentControl x:Name="Bow" CanDrag="True" DragStarting="Inventario_DragStarting" UseSystemFocusVisuals="True" Grid.Column="1"  Height="100" Width="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                        <Image Source="/Assets/Ability04.png"  />
                     </ContentControl>
-                    <ContentControl x:Name="Fire" CanDrag="True" DragStarting="Inventario_DragStarting" UseSystemFocusVisuals="True" Grid.Column="2">
+                    <ContentControl x:Name="Fire" CanDrag="True" DragStarting="Inventario_DragStarting" UseSystemFocusVisuals="True" Grid.Column="2"  Height="100" Width="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                        <Image Source="/Assets/Campfire.png"  />
                     </ContentControl>
-                    <ContentControl x:Name="Brick" CanDrag="True" DragStarting="Inventario_DragStarting" UseSystemFocusVisuals="True" Grid.Row="1">
+                    <ContentControl x:Name="Brick" CanDrag="True" DragStarting="Inventario_DragStarting" UseSystemFocusVisuals="True" Grid.Row="1"  Height="100" Width="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                        <Image Source="/Assets/resource_iron.png"  />
                     </ContentControl>
-                    <ContentControl x:Name="Apple" CanDrag="True" DragStarting="Inventario_DragStarting" UseSystemFocusVisuals="True" Grid.Column="1" Grid.Row="1">
+                    <ContentControl x:Name="Apple" CanDrag="True" DragStarting="Inventario_DragStarting" UseSystemFocusVisuals="True" Grid.Column="1" Grid.Row="1"  Height="100" Width="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                        <Image Source="/Assets/resource_apple.png"  />
                     </ContentControl>
-                    <ContentControl x:Name="Money" CanDrag="True" DragStarting="Inventario_DragStarting" UseSystemFocusVisuals="True" Grid.Column="2" Grid.Row="1">
+                    <ContentControl x:Name="Money" CanDrag="True" DragStarting="Inventario_DragStarting" UseSystemFocusVisuals="True" Grid.Column="2" Grid.Row="1"  Height="100" Width="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                        <Image Source="/Assets/Ability00.png"  />
                     </ContentControl>
                 </Grid>
             </Grid>
