@@ -164,28 +164,6 @@ namespace DSI_Mockup
             Party.Visibility = Visibility.Collapsed;
         }
 
-        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Inv_Click(object sender, RoutedEventArgs e)
-        {
-            Button s = sender as Button;
-
-            Vector3 pos = s.Translation;
-
-
-            Context_Show(pos, e);
-        }
-
-        private void Context_Show(Vector3 pos, RoutedEventArgs e)
-        {
-            Context.Translation = pos;
-            
-            Context.Visibility = Visibility.Visible;
-        }
-
     }
 
 }

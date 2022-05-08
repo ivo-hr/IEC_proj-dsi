@@ -204,9 +204,9 @@
                             <TextBlock Text=" back" FontSize="45" VerticalAlignment="Center"/>
                         </StackPanel>
                     </Button>
-                    <Image Source="/Assets/Blck.png" Stretch="Fill" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1" Grid.RowSpan="3"></Image>
+                    <Rectangle Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1" Grid.RowSpan="3" Fill="DarkSlateBlue"/>
 
-                    <Button Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Margin="20" Click="Inv_Click">
+                    <Button Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Margin="20" CornerRadius="20,20,20,20" Background="CornflowerBlue">
                         <StackPanel Orientation="Horizontal">
                             <Image Source="/Assets/Ability03.png"/>
                             <StackPanel Orientation="Vertical" Width="100">
@@ -215,7 +215,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Margin="20">
+                    <Button Grid.Row="2" Grid.Column="1"  HorizontalAlignment="Center" Margin="20" CornerRadius="20,20,20,20" Background="CornflowerBlue">
                         <StackPanel Orientation="Horizontal">
                             <Image Source="/Assets/Ability03.png"/>
                             <StackPanel Orientation="Vertical" Width="100">
@@ -224,7 +224,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" Margin="20">
+                    <Button Grid.Row="3" Grid.Column="1"  HorizontalAlignment="Center" Margin="20" CornerRadius="20,20,20,20" Background="CornflowerBlue">
                         <StackPanel Orientation="Horizontal">
                             <Image Source="/Assets/Ability02.png"/>
                             <StackPanel Orientation="Vertical" Width="100">
@@ -234,7 +234,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" Margin="20">
+                    <Button Grid.Row="1" Grid.Column="2"  HorizontalAlignment="Center" Margin="20" CornerRadius="20,20,20,20" Background="CornflowerBlue">
                         <StackPanel Orientation="Horizontal">
                             <Image Source="/Assets/Ability04.png"/>
                             <StackPanel Orientation="Vertical" Width="100">
@@ -244,7 +244,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" Margin="20">
+                    <Button Grid.Row="1" Grid.Column="3"  HorizontalAlignment="Center" Margin="20" CornerRadius="20,20,20,20" Background="CornflowerBlue">
                         <StackPanel Orientation="Horizontal">
                             <Image Source="/Assets/Ability02.png"/>
                             <StackPanel Orientation="Vertical" Width="100">
@@ -253,7 +253,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" Margin="20">
+                    <Button Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" Margin="20" CornerRadius="20,20,20,20" Background="CornflowerBlue">
                         <StackPanel Orientation="Horizontal">
                             <Image Source="/Assets/Ability01.png"/>
                             <StackPanel Orientation="Vertical" Width="100">
@@ -262,7 +262,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" Margin="20">
+                    <Button Grid.Row="2" Grid.Column="3"  HorizontalAlignment="Center" Margin="20" CornerRadius="20,20,20,20" Background="CornflowerBlue">
                         <StackPanel Orientation="Horizontal">
                             <Image Source="/Assets/Ability00.png"/>
                             <StackPanel Orientation="Vertical" Width="100">
