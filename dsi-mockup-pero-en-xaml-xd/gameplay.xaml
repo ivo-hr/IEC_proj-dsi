@@ -312,7 +312,7 @@
                 </StackPanel>
             </ScrollViewer>
             <Button Style="{StaticResource GameButton}" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="0" Grid.Row="1" 
-                    Click="Back3_Click"  Width="175" Background="Transparent">
+                    Click="Back4_Click"  Width="175" Background="Transparent">
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="175" Background="Transparent">
                     <FontIcon Glyph="&#xE7A7;" FontSize="40" />
                     <TextBlock Text=" back" FontSize="45" VerticalAlignment="Center"/>
