@@ -62,7 +62,7 @@
             </Button>
         </StackPanel>
 
-        <StackPanel Grid.Row="3" Grid.Column="0" Margin="0,0,0,0" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+        <StackPanel Grid.Row="2" Grid.Column="0" Margin="0,0,0,0" VerticalAlignment="Bottom" HorizontalAlignment="Left" Height="100">
             <Button Style="{StaticResource GameButton}" Click="Pause_Click" Width="210" CornerRadius="0,20,0,0">
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95">
                     <FontIcon Glyph="&#59155;" FontSize="40" />
@@ -72,7 +72,7 @@
             </Button>
         </StackPanel>
 
-        <StackPanel Grid.Row="3" Grid.Column="3" Margin="0,0,10,0" VerticalAlignment="Bottom" HorizontalAlignment="Right" Background="#55000000">
+        <StackPanel Grid.Row="3" Grid.Column="3" Margin="0,0,10,0" VerticalAlignment="Bottom" HorizontalAlignment="Right" Background="#55000000"  CornerRadius="20, 0, 0, 0">
             <TextBlock Text="{x:Bind CurrentTime, Mode=OneWay}" FontSize="30" HorizontalAlignment="Right"/>
             <TextBlock Text="{x:Bind CurrentDate, Mode=OneWay}" FontSize="40" FontWeight="Bold" VerticalAlignment="Center"/>
         </StackPanel>
@@ -178,100 +178,103 @@
             </Viewbox>
         </Grid>
 
-        <Grid x:Name="Inv" Grid.RowSpan="3" Grid.ColumnSpan="3" Opacity="0.8" Background="#232A48" Visibility="Collapsed">
-            <Grid x:Name="Inve" Grid.RowSpan="3" Grid.ColumnSpan="3">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <TextBlock Text="Inventario" Foreground="White" FontSize="90" HorizontalAlignment="Left" Height="Auto" Width="Auto"
+        <Grid x:Name="Inv" Grid.RowSpan="3" Grid.ColumnSpan="3" Opacity="0.8" Background="#232A48" Visibility="Visible">
+            <Viewbox>
+                <Grid x:Name="Inve" Grid.RowSpan="3" Grid.ColumnSpan="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Inventario" Foreground="White" FontSize="90" HorizontalAlignment="Left" Height="Auto" Width="Auto"
                            Grid.ColumnSpan="3"/>
-                <Button Style="{StaticResource GameButton}" Click="Back3_Click" Grid.Row="6" Width="auto" Background="Transparent"
+                    <Button Style="{StaticResource GameButton}" Click="Back3_Click" Grid.Row="6" Width="auto" Background="Transparent"
                         VerticalAlignment="Bottom"  >
-                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="175" Background="Transparent">
-                        <FontIcon Glyph="&#xE7A7;" FontSize="40" />
-                        <TextBlock Text=" back" FontSize="45" VerticalAlignment="Center"/>
-                    </StackPanel>
-                </Button>
-                <Image Source="/Assets/Blck.png" Stretch="Fill" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1" Grid.RowSpan="3"></Image>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="175" Background="Transparent">
+                            <FontIcon Glyph="&#xE7A7;" FontSize="40" />
+                            <TextBlock Text=" back" FontSize="45" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                    <Image Source="/Assets/Blck.png" Stretch="Fill" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1" Grid.RowSpan="3"></Image>
 
-                <Button Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Margin="20" Click="Inv_Click">
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="/Assets/Ability03.png"/>
-                        <StackPanel Orientation="Vertical" Width="100">
-                            <TextBlock Text="Extintor" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
-                            <TextBlock  Text="Una de las formas más efectivas de combatir fuegos, hay hasta en los buses!" TextWrapping="Wrap" FontSize="13"/>
+                    <Button Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Margin="20" Click="Inv_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Assets/Ability03.png"/>
+                            <StackPanel Orientation="Vertical" Width="100">
+                                <TextBlock Text="Extintor" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+                                <TextBlock  Text="Una de las formas más efectivas de combatir fuegos, hay hasta en los buses!" TextWrapping="Wrap" FontSize="13"/>
+                            </StackPanel>
                         </StackPanel>
-                    </StackPanel>
-                </Button>
-                <Button Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Margin="20">
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="/Assets/Ability03.png"/>
-                        <StackPanel Orientation="Vertical" Width="100">
-                            <TextBlock Text="Extintor" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
-                            <TextBlock  Text="Una de las formas más efectivas de combatir fuegos, hay hasta en los buses!" TextWrapping="Wrap" FontSize="13"/>
+                    </Button>
+                    <Button Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Margin="20">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Assets/Ability03.png"/>
+                            <StackPanel Orientation="Vertical" Width="100">
+                                <TextBlock Text="Extintor" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+                                <TextBlock  Text="Una de las formas más efectivas de combatir fuegos, hay hasta en los buses!" TextWrapping="Wrap" FontSize="13"/>
+                            </StackPanel>
                         </StackPanel>
-                    </StackPanel>
-                </Button>
-                <Button Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" Margin="20">
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="/Assets/Ability02.png"/>
-                        <StackPanel Orientation="Vertical" Width="100">
-                            <TextBlock Text="Hacha" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
-                            <TextBlock  Text="El utensilio más importante de un bombero, le permite romper obstáculos para salvar vidas!" 
+                    </Button>
+                    <Button Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" Margin="20">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Assets/Ability02.png"/>
+                            <StackPanel Orientation="Vertical" Width="100">
+                                <TextBlock Text="Hacha" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+                                <TextBlock  Text="El utensilio más importante de un bombero, le permite romper obstáculos para salvar vidas!" 
                                         TextWrapping="Wrap" FontSize="13"/>
+                            </StackPanel>
                         </StackPanel>
-                    </StackPanel>
-                </Button>
-                <Button Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" Margin="20">
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="/Assets/Ability04.png"/>
-                        <StackPanel Orientation="Vertical" Width="100">
-                            <TextBlock Text="Manguera" VerticalAlignment="Top" FontSize="19" FontWeight="Bold"/>
-                            <TextBlock  Text="El método más eficaz de acabar con un incendio debido a la gran cantidad de  agua que puede lanzar!" 
+                    </Button>
+                    <Button Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" Margin="20">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Assets/Ability04.png"/>
+                            <StackPanel Orientation="Vertical" Width="100">
+                                <TextBlock Text="Manguera" VerticalAlignment="Top" FontSize="19" FontWeight="Bold"/>
+                                <TextBlock  Text="El método más eficaz de acabar con un incendio debido a la gran cantidad de  agua que puede lanzar!" 
                                         TextWrapping="Wrap" FontSize="13"/>
+                            </StackPanel>
                         </StackPanel>
-                    </StackPanel>
-                </Button>
-                <Button Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" Margin="20">
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="/Assets/Ability02.png"/>
-                        <StackPanel Orientation="Vertical" Width="100">
-                            <TextBlock Text="Tirita" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
-                            <TextBlock  Text="Cura tus heridas pequeñas rápidamente. Lo mismo te toca una con dibujito de elefante!" TextWrapping="Wrap" FontSize="13"/>
+                    </Button>
+                    <Button Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" Margin="20">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Assets/Ability02.png"/>
+                            <StackPanel Orientation="Vertical" Width="100">
+                                <TextBlock Text="Tirita" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+                                <TextBlock  Text="Cura tus heridas pequeñas rápidamente. Lo mismo te toca una con dibujito de elefante!" TextWrapping="Wrap" FontSize="13"/>
+                            </StackPanel>
                         </StackPanel>
-                    </StackPanel>
-                </Button>
-                <Button Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" Margin="20">
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="/Assets/Ability01.png"/>
-                        <StackPanel Orientation="Vertical" Width="100">
-                            <TextBlock Text="Tirita" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
-                            <TextBlock  Text="Cura tus heridas pequeñas rápidamente. Lo mismo te toca una con dibujito de elefante!" TextWrapping="Wrap" FontSize="13"/>
+                    </Button>
+                    <Button Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" Margin="20">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Assets/Ability01.png"/>
+                            <StackPanel Orientation="Vertical" Width="100">
+                                <TextBlock Text="Tirita" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+                                <TextBlock  Text="Cura tus heridas pequeñas rápidamente. Lo mismo te toca una con dibujito de elefante!" TextWrapping="Wrap" FontSize="13"/>
+                            </StackPanel>
                         </StackPanel>
-                    </StackPanel>
-                </Button>
-                <Button Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" Margin="20">
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="/Assets/Ability00.png"/>
-                        <StackPanel Orientation="Vertical" Width="100">
-                            <TextBlock Text="Escalera" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
-                            <TextBlock  Text="Alcanza zonas altas, haz un puente o salva gatitos en árboles: la superescalera!" TextWrapping="Wrap" FontSize="13"/>
+                    </Button>
+                    <Button Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" Margin="20">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Assets/Ability00.png"/>
+                            <StackPanel Orientation="Vertical" Width="100">
+                                <TextBlock Text="Escalera" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+                                <TextBlock  Text="Alcanza zonas altas, haz un puente o salva gatitos en árboles: la superescalera!" TextWrapping="Wrap" FontSize="13"/>
+                            </StackPanel>
                         </StackPanel>
-                    </StackPanel>
-                </Button>
+                    </Button>
 
-            </Grid>
+                </Grid>
+            </Viewbox>
+            
         </Grid>
 
         <Grid x:Name="MissionPanelGrid" Grid.RowSpan="3" Grid.ColumnSpan="3" Background="#2D3A5B" Visibility="Collapsed">
@@ -287,45 +290,45 @@
             <ScrollViewer Grid.RowSpan="2"  VerticalScrollBarVisibility= "Disabled" HorizontalScrollBarVisibility="Visible" Grid.Column="1"
                           Grid.Row="0" Margin="10,50,10,10" FlowDirection="LeftToRight" >
                 <StackPanel Orientation="Horizontal" Margin="10,10,10,50">
-                <Image Source="/Assets/Mision01.png" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10,10,10,10"/>
-                <Image Source="/Assets/Mision02.png" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10,10,10,10"/>
-                <Image Source="/Assets/Mision03.png" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10,10,10,10"/>
-                <Image Source="/Assets/Mision02.png" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10,10,10,10"/>
-                <Image Source="/Assets/Mision03.png" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10,10,10,10"/>
-                <Image Source="/Assets/Mision02.png" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10,10,10,10"/>
-                <Image Source="/Assets/Mision01.png" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10,10,10,10"/>
-            </StackPanel>
+                    <Image Source="/Assets/Mision01.png" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10,10,10,10"/>
+                    <Image Source="/Assets/Mision02.png" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10,10,10,10"/>
+                    <Image Source="/Assets/Mision03.png" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10,10,10,10"/>
+                    <Image Source="/Assets/Mision02.png" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10,10,10,10"/>
+                    <Image Source="/Assets/Mision03.png" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10,10,10,10"/>
+                    <Image Source="/Assets/Mision02.png" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10,10,10,10"/>
+                    <Image Source="/Assets/Mision01.png" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10,10,10,10"/>
+                </StackPanel>
             </ScrollViewer>
             <Button Style="{StaticResource GameButton}" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="0" Grid.Row="1" Click="Back5_Click"  Width="175" Background="Transparent">
-                 <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="175" Background="Transparent">
-                     <FontIcon Glyph="&#xE7A7;" FontSize="40" />
-                     <TextBlock Text=" back" FontSize="45" VerticalAlignment="Center"/>
-                 </StackPanel>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="175" Background="Transparent">
+                    <FontIcon Glyph="&#xE7A7;" FontSize="40" />
+                    <TextBlock Text=" back" FontSize="45" VerticalAlignment="Center"/>
+                </StackPanel>
             </Button>
 
-        <StackPanel x:Name="Context" Background="Violet"  Width="120" Height="60" Visibility="Collapsed">
-            <Button Content="Cum" Width="120"/>
-            <Button Content="balls" Width="120" Background="Red"/>
+            <StackPanel x:Name="Context" Background="Violet"  Width="120" Height="60" Visibility="Collapsed">
+                <Button Content="Cum" Width="120"/>
+                <Button Content="balls" Width="120" Background="Red"/>
 
-        </StackPanel>
-        
-        
-        <Grid x:Name="Log" Grid.RowSpan="3" Grid.ColumnSpan="3" Opacity="0.8" Background="#232A48" Visibility="Collapsed">
-            <Viewbox HorizontalAlignment="Stretch">
-                <StackPanel Background="Transparent">
-                    <TextBlock Text="Log" Foreground="White" FontSize="60" HorizontalAlignment="Left" Height="96" Width="160"/>
-                    <ScrollViewer Height="1000" HorizontalAlignment="Stretch">
-                        <Image Source="/Assets/log.png"></Image>
-                    </ScrollViewer>
-                    <Button Style="{StaticResource GameButton}" Click="Back4_Click" Grid.Row="6" Width="175" Background="Transparent">
-                        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="175" Background="Transparent">
-                            <FontIcon Glyph="&#xE7A7;" FontSize="40" />
-                            <TextBlock Text=" back" FontSize="45" VerticalAlignment="Center"/>
-                        </StackPanel>
-                    </Button>
-                </StackPanel>
-            </Viewbox>
+            </StackPanel>
+
+
+            <Grid x:Name="Log" Grid.RowSpan="3" Grid.ColumnSpan="3" Opacity="0.8" Background="#232A48" Visibility="Collapsed">
+                <Viewbox HorizontalAlignment="Stretch">
+                    <StackPanel Background="Transparent">
+                        <TextBlock Text="Log" Foreground="White" FontSize="60" HorizontalAlignment="Left" Height="96" Width="160"/>
+                        <ScrollViewer Height="1000" HorizontalAlignment="Stretch">
+                            <Image Source="/Assets/log.png"></Image>
+                        </ScrollViewer>
+                        <Button Style="{StaticResource GameButton}" Click="Back4_Click" Grid.Row="6" Width="175" Background="Transparent">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="175" Background="Transparent">
+                                <FontIcon Glyph="&#xE7A7;" FontSize="40" />
+                                <TextBlock Text=" back" FontSize="45" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </Viewbox>
+            </Grid>
         </Grid>
-    </Grid>
     </Grid>
 </Page>

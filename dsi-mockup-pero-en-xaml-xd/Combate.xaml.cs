@@ -109,6 +109,30 @@ namespace DSI_Mockup
             args.Data.SetText(mov.Name);
 
             args.Data.RequestedOperation = DataPackageOperation.Copy;
+
+            switch (mov.Name)
+            {
+                case "Wood":
+                    itemDescription.Text = "Un trozo de madera de arbol. Se puede usar para atraer a enemigos tipo fuego";
+                    break;
+                case "Bow":
+                    itemDescription.Text = "Un arco de un solo uso que dispara una flecha de agua";
+                    break;
+                case "Fire":
+                    itemDescription.Text = "Una fogata rápida. Quema a los enemigos o calienta a los heroes";
+                    break;
+                case "Brick":
+                    itemDescription.Text = "Un lingote de metal. Refuerza a un heroe para que reciba menos daño durante 2 turnos";
+                    break;
+                case "Apple":
+                    itemDescription.Text = "Una manzana al día da una vida sana. Cura a un heroe 10 puntos de vida";
+                    break;
+                case "Money":
+                    itemDescription.Text = "Una bolsa de dinero otorgado a los heroes. Usarla te da 10 monedas";
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void MiCanvas_DragOver(object sender, DragEventArgs e)
@@ -133,6 +157,8 @@ namespace DSI_Mockup
             obj.SetValue(Canvas.TopProperty, pnt.Y - 150);
 
             MiCanvas.Children.Remove(obj);
+
+            itemDescription.Text = "";
         }
     }
 }
