@@ -14,7 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI.Xaml.Media.Imaging;
 using System.ComponentModel;
-
+using System.Numerics;
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace DSI_Mockup
@@ -168,8 +168,25 @@ namespace DSI_Mockup
         {
 
         }
-    }
 
+        private void Inv_Click(object sender, RoutedEventArgs e)
+        {
+            Button s = sender as Button;
+
+            Vector3 pos = s.Translation;
+
+
+            Context_Show(pos, e);
+        }
+
+        private void Context_Show(Vector3 pos, RoutedEventArgs e)
+        {
+            Context.Translation = pos;
+            
+            Context.Visibility = Visibility.Visible;
+        }
+
+    }
 
 }
 

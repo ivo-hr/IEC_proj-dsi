@@ -66,7 +66,7 @@ namespace DSI_Mockup
                     specAbilDesc.Text = "Lanza tu extintor para que  explote, haciendo daño a todos los enemigos!";
                     break;
                 case "Police":
-                    abil1Desc.Text = "Ponm la escalera delante tuya para aumentar  tu defensa!";
+                    abil1Desc.Text = "Pon la escalera delante tuya para aumentar  tu defensa!";
                     abil2Desc.Text = "Aumenta tu  velocidad tomando una bebida energética. Fiuum!";
                     abil3Desc.Text = "Lanza la escalera al pie de tus enemigos, reduciendo la velocidad a  todos!";
                     specAbilDesc.Text = "Pega un maporrazo con la escalera a 2 de tus enemigos. Qué daño!";
