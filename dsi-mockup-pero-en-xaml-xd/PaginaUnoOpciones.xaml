@@ -36,22 +36,22 @@
         </Viewbox>
         <Viewbox Grid.Row="1">
             <StackPanel HorizontalAlignment="Stretch" Margin="20,20,20,20"  >
-                <TextBlock Text="Volumen de Musica:" Margin="0,0,0,5"/>
-                <Slider x:Name="sliderMusic" Background="Black"
+                <TextBlock Text="Volumen de Musica:" Margin="0,0,0,5" Foreground="White"/>
+                <Slider x:Name="sliderMusic" Background="Black" 
                 Minimum="0" 
                 Maximum="10" 
                 Value=" 8"/>
-                <TextBlock Text="Volumen SFX :" Margin="0,0,0,5"/>
+                <TextBlock Text="Volumen SFX :" Margin="0,0,0,5" Foreground="White"/>
                 <Slider x:Name="sliderSFX" Background="Black"
                 Minimum="0" 
                 Maximum="10" 
                 Value=" 4"/>
-                <TextBlock Text="Velocidad Texto" Margin="0,0,0,5"/>
+                <TextBlock Text="Velocidad Texto" Margin="0,0,0,5" Foreground="White"/>
                 <Slider x:Name="sliderTextSpeed" Background="Black"
                 Minimum="0" 
                 Maximum="3" 
                 Value="2"/>
-                <TextBlock Text="Cantidad Efectos Visuales:" Margin="0,0,0,5"/>
+                <TextBlock Text="Cantidad Efectos Visuales:" Margin="0,0,0,5" Foreground="White"/>
                 <ComboBox SelectedIndex="0" HorizontalAlignment="Center">
                     <ComboBoxItem Content="Muy Alta"/>
                     <ComboBoxItem Content="Alta"/>

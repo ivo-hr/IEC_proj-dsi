@@ -72,9 +72,9 @@
             <Viewbox Grid.Row="2"  Margin="20,20,20,20"   HorizontalAlignment="Left" VerticalAlignment="Center">
                 <StackPanel Orientation="Vertical">
                     <Button Content="Opciones" Style="{StaticResource SmallButton}"
-                    Click="Page1Options_Click" Width="120" FontSize="20" />
+                    Click="Page1Options_Click" Width="120" FontSize="20" Foreground="White"/>
                     <Button Content="Créditos" Style="{StaticResource SmallButton}"
-                    Click="Page1Credits_Click" Width="120" FontSize="20" />
+                    Click="Page1Credits_Click" Width="120" FontSize="20" Foreground="White"/>
                     <Button Content="Salir" Style="{StaticResource SmallButton}" Background="#aa1524"
                     Click="Button_Exit" Width="120" FontSize="20" />
             </StackPanel>
