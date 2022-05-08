@@ -14,11 +14,12 @@
             <Setter Property="FontSize" Value="40"/>
             <Setter Property="Width" Value="auto" />
             <Setter Property="Height" Value="auto" />
-            <Setter Property="Margin" Value="0,0,0,20" />
+            <Setter Property="Margin" Value="10,10,10,10" />
             <Setter Property="VerticalAlignment" Value="Center" />
             <Setter Property="HorizontalAlignment" Value="Stretch" />
             <Setter Property="Background" Value="#55000000"/>
             <Setter Property="Foreground" Value="White"/>
+            <Setter Property="CornerRadius" Value="20"/>
         </Style>
         <Style x:Key="SmallButton" TargetType="Button">
             <Setter Property="FontFamily" Value="Impact"/>
@@ -77,39 +78,39 @@
             <TextBlock Text="{x:Bind CurrentDate, Mode=OneWay}" FontSize="40" FontWeight="Bold" VerticalAlignment="Center"/>
         </StackPanel>
         
-        <Grid x:Name="Menu" Grid.ColumnSpan="1" Grid.RowSpan="3" Visibility="Visible" Background="#232A48">
+        <Grid x:Name="Menu" Grid.ColumnSpan="1" Grid.RowSpan="3" Visibility="Collapsed" Background="#232A48">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1.6*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="100"/>
             </Grid.RowDefinitions>
-            <Viewbox>
-            <StackPanel Grid.Row="0">
-                <TextBlock Text=" MENU" FontSize="60" FontWeight="Bold" Foreground="White" VerticalAlignment="Center"/>
-                    <Button Style="{StaticResource GameButton}" Click="Inventory_Click" PointerEntered="Inv_startHover" PointerExited="stopHover">
-                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="300">
-                        <FontIcon Glyph="&#xE8A9;" FontSize="40" />
-                        <TextBlock Text=" Inventario" FontSize="45" VerticalAlignment="Center"/>
-                    </StackPanel>
-                </Button>
+            <Viewbox Stretch="Uniform" HorizontalAlignment="Center">
+            <StackPanel Grid.Row="0" HorizontalAlignment="Center">
+            <TextBlock Text=" MENU" FontSize="60" FontWeight="Bold" Foreground="White" VerticalAlignment="Center"/>
+                <Button Style="{StaticResource GameButton}" Click="Inventory_Click" PointerEntered="Inv_startHover" PointerExited="stopHover">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="300">
+                    <FontIcon Glyph="&#xE8A9;" FontSize="40" />
+                    <TextBlock Text=" Inventario" FontSize="45" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
 
-                <Button Style="{StaticResource GameButton}" Click="Party_Click"  
-                    PointerEntered="Party_startHover"
-                    PointerExited="stopHover">
-                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Height="95" Width="300">
-                        <FontIcon Glyph="&#xE716;" FontSize="40" />
-                        <TextBlock Text=" Equipo" FontSize="45" VerticalAlignment="Center"/>
-                    </StackPanel>
-                </Button>
+            <Button Style="{StaticResource GameButton}" Click="Party_Click"  
+                PointerEntered="Party_startHover"
+                PointerExited="stopHover">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Height="95" Width="300">
+                    <FontIcon Glyph="&#xE716;" FontSize="40" />
+                    <TextBlock Text=" Equipo" FontSize="45" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
 
-                <Button Style="{StaticResource GameButton}" Click="Log_Click" 
-                    PointerEntered="Log_startHover"
-                    PointerExited="stopHover">
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="95">
-                        <FontIcon Glyph="&#xE8A4;" FontSize="40" />
-                        <TextBlock Text=" Panel de Misiones" FontSize="45" VerticalAlignment="Center"/>
-                    </StackPanel>
-                </Button>
+            <Button Style="{StaticResource GameButton}" Click="Log_Click" 
+                PointerEntered="Log_startHover"
+                PointerExited="stopHover">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="95">
+                    <FontIcon Glyph="&#xE8A4;" FontSize="40" />
+                    <TextBlock Text=" Panel de Misiones" FontSize="45" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
             </StackPanel>
             </Viewbox>
             <Viewbox  Grid.Row="1">
