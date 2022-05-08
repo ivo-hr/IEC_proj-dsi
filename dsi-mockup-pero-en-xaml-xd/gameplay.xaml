@@ -76,30 +76,27 @@
             <TextBlock Text="{x:Bind CurrentTime, Mode=OneWay}" FontSize="30" HorizontalAlignment="Right"/>
             <TextBlock Text="{x:Bind CurrentDate, Mode=OneWay}" FontSize="40" FontWeight="Bold" VerticalAlignment="Center"/>
         </StackPanel>
-
-        <Grid x:Name="Menu" Grid.ColumnSpan="1" Grid.RowSpan="3" Visibility="Collapsed" Background="#232A48">
+        
+        <Grid x:Name="Menu" Grid.ColumnSpan="1" Grid.RowSpan="3" Visibility="Visible" Background="#232A48">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1.6*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="100"/>
             </Grid.RowDefinitions>
-
+            <Viewbox>
             <StackPanel Grid.Row="0">
-                <TextBlock Text=" MENU" FontSize="60" FontWeight="Bold" Margin="20,20,20,20"  Foreground="White" VerticalAlignment="Center"/>
-                <Button Style="{StaticResource GameButton}" 
-                    Click="Inventory_Click"  Width="auto"
-                    PointerEntered="Inv_startHover"
-                    PointerExited="stopHover">
+                <TextBlock Text=" MENU" FontSize="60" FontWeight="Bold" Foreground="White" VerticalAlignment="Center"/>
+                    <Button Style="{StaticResource GameButton}" Click="Inventory_Click" PointerEntered="Inv_startHover" PointerExited="stopHover">
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="300">
                         <FontIcon Glyph="&#xE8A9;" FontSize="40" />
-                        <TextBlock Text=" Inventario" FontSize="45" VerticalAlignment="Center" SelectionChanged="TextBlock_SelectionChanged"/>
+                        <TextBlock Text=" Inventario" FontSize="45" VerticalAlignment="Center"/>
                     </StackPanel>
                 </Button>
 
                 <Button Style="{StaticResource GameButton}" Click="Party_Click"  
                     PointerEntered="Party_startHover"
                     PointerExited="stopHover">
-                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="95" Width="300">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Height="95" Width="300">
                         <FontIcon Glyph="&#xE716;" FontSize="40" />
                         <TextBlock Text=" Equipo" FontSize="45" VerticalAlignment="Center"/>
                     </StackPanel>
@@ -114,12 +111,14 @@
                     </StackPanel>
                 </Button>
             </StackPanel>
-
-            <Image x:Name="hoverImg" Height="Auto" Width="Auto" Margin="20, 20, 20, 20" Grid.Row="1">
+            </Viewbox>
+            <Viewbox  Grid.Row="1">
+            <Image x:Name="hoverImg" Height="Auto" Width="Auto" Margin="20, 20, 20, 20">
                 <Image.Source>
                     <BitmapImage UriSource="/Assets/Blck.png"/>
                 </Image.Source>
             </Image>
+            </Viewbox>
 
             <Button Style="{StaticResource GameButton}" Click="Back_Click" Grid.Row="6">
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Width="auto">
@@ -178,7 +177,7 @@
             </Viewbox>
         </Grid>
 
-        <Grid x:Name="Inv" Grid.RowSpan="3" Grid.ColumnSpan="3" Opacity="0.8" Background="#232A48" Visibility="Visible">
+        <Grid x:Name="Inv" Grid.RowSpan="3" Grid.ColumnSpan="3" Opacity="0.8" Background="#232A48" Visibility="Collapsed">
             <Viewbox>
                 <Grid x:Name="Inve" Grid.RowSpan="3" Grid.ColumnSpan="3">
                     <Grid.RowDefinitions>
@@ -305,13 +304,6 @@
                     <TextBlock Text=" back" FontSize="45" VerticalAlignment="Center"/>
                 </StackPanel>
             </Button>
-
-            <StackPanel x:Name="Context" Background="Violet"  Width="120" Height="60" Visibility="Collapsed">
-                <Button Content="Cum" Width="120"/>
-                <Button Content="balls" Width="120" Background="Red"/>
-
-            </StackPanel>
-
 
             <Grid x:Name="Log" Grid.RowSpan="3" Grid.ColumnSpan="3" Opacity="0.8" Background="#232A48" Visibility="Collapsed">
                 <Viewbox HorizontalAlignment="Stretch">
