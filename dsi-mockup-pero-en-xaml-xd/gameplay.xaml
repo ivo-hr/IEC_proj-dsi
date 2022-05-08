@@ -236,7 +236,7 @@
             </Grid>
         </Grid>
 
-        <Grid x:Name="MissionPanelGrid" Grid.RowSpan="3" Grid.ColumnSpan="3" Background="#2D3A5B" Visibility="Visible">
+        <Grid x:Name="MissionPanelGrid" Grid.RowSpan="3" Grid.ColumnSpan="3" Background="#2D3A5B" Visibility="Collapsed">
             <Grid.RowDefinitions>
                 <RowDefinition Height="4*"/>
                 <RowDefinition Height="*"/>
