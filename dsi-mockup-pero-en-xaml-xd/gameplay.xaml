@@ -14,7 +14,6 @@
             <Setter Property="FontSize" Value="40"/>
             <Setter Property="Width" Value="auto" />
             <Setter Property="Height" Value="auto" />
-            <Setter Property="Margin" Value="10,10,10,10" />
             <Setter Property="VerticalAlignment" Value="Center" />
             <Setter Property="HorizontalAlignment" Value="Stretch" />
             <Setter Property="Background" Value="#55000000"/>

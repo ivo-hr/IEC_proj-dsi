@@ -22,9 +22,7 @@
             <RowDefinition Height="6*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Canvas>
-            <Image Stretch="Fill" Source="/Assets/city2.png" Height="1009" Width="1500"/>
-        </Canvas>
+        <Image Stretch="Fill" Source="/Assets/city2.png" Grid.RowSpan="3"/>
         <Button Grid.Row="2" Margin="40,0,0,0"
             Click="Page1Return_OnClick">
             <SymbolIcon Symbol="Back" />

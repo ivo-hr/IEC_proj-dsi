@@ -23,9 +23,7 @@
             <RowDefinition Height="6*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Canvas>
-            <Image Stretch="Fill" Source="/Assets/city2.png" Height="1009" Width="1500"/>
-        </Canvas>
+        <Image Stretch="Fill" Source="/Assets/city2.png" Grid.RowSpan="3"/>
         <Viewbox>
             <StackPanel Grid.Row="0" Margin="40,0,0,0" VerticalAlignment="Center">
             <TextBlock Foreground="White" FontSize="80" FontWeight="ExtraBold" HorizontalAlignment="Left"
