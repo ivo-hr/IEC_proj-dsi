@@ -77,7 +77,7 @@
             <TextBlock Text="{x:Bind CurrentDate, Mode=OneWay}" FontSize="40" FontWeight="Bold" VerticalAlignment="Center"/>
         </StackPanel>
 
-        <Grid x:Name="Menu" Grid.ColumnSpan="1" Grid.RowSpan="3" Visibility="Collapsed" Background="#232A48">
+        <Grid x:Name="Menu" Grid.ColumnSpan="1" Grid.RowSpan="3" Visibility="Visible" Background="#232A48">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1.6*"/>
                 <RowDefinition Height="*"/>
@@ -119,9 +119,7 @@
                 <Image.Source>
                     <BitmapImage UriSource="/Assets/Blck.png"/>
                 </Image.Source>
-
             </Image>
-
 
             <Button Style="{StaticResource GameButton}" Click="Back_Click" Grid.Row="6">
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Width="auto">
@@ -129,13 +127,9 @@
                     <TextBlock Text=" back" FontSize="45" VerticalAlignment="Center"/>
                 </StackPanel>
             </Button>
-
         </Grid>
 
-
-
         <Grid x:Name="Pause" Grid.RowSpan="3" Grid.ColumnSpan="3" Background="#325c96" Visibility="Collapsed" Opacity="0.8" CornerRadius="40" Margin="250,0,250,0">
-
             <Grid.RowDefinitions>
                 <RowDefinition Height="280"/>
                 <RowDefinition Height="*"/>
