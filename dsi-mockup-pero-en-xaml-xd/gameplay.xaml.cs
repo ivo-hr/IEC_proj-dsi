@@ -107,7 +107,7 @@ namespace DSI_Mockup
 
         private void Log_Click(object sender, RoutedEventArgs e)
         {
-            Log.Visibility = Visibility.Visible;
+            MissionPanelGrid.Visibility = Visibility.Visible;
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
@@ -156,7 +156,7 @@ namespace DSI_Mockup
 
         private void Back4_Click(object sender, RoutedEventArgs e)
         {
-            Log.Visibility = Visibility.Collapsed;
+            MissionPanelGrid.Visibility = Visibility.Collapsed;
         }
 
         private void Back5_Click(object sender, RoutedEventArgs e)

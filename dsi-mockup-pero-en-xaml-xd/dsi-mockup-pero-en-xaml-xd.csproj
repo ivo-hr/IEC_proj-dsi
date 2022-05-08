@@ -183,6 +183,9 @@
     <Content Include="Assets\map.png" />
     <Content Include="Assets\jugarBoton.png" />
     <Content Include="Assets\MenuBoton.png" />
+    <Content Include="Assets\Mision01.png" />
+    <Content Include="Assets\Mision02.png" />
+    <Content Include="Assets\Mision03.png" />
     <Content Include="Assets\OpcionesBoton.png" />
     <Content Include="Assets\party.png" />
     <Content Include="Assets\party_hover.png" />
