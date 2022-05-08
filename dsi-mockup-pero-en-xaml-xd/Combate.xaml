@@ -76,6 +76,15 @@
             <Setter Property="HorizontalAlignment" Value="left" />
             <Setter Property="CornerRadius" Value="20"/>
         </Style>
+
+        <Style x:Key="Item" TargetType="ContentControl">
+            <Setter Property="CanDrag" Value="True"/>
+            <Setter Property="UseSystemFocusVisuals" Value="True"/>
+            <Setter Property="Height" Value="100"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
     </Page.Resources>
 
     <Grid Background="#2D3A5B">
@@ -170,14 +179,14 @@
                 <Button Style="{StaticResource AbilityButton}" VerticalAlignment="Center" Height="300" Width="200" >
                     <StackPanel Margin= "5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                         <Image Source="/Assets/Ability01.png" Width="100" Height="100"/>
-                        <TextBlock Style="{StaticResource AbilityText}" Text="Ability 1 " FontWeight="Bold"/>
+                        <TextBlock Style="{StaticResource AbilityText}" Text="Ability 2 " FontWeight="Bold"/>
                         <TextBlock x:Name="abil2Desc" Style="{StaticResource AbilityText}" Text = "Te comes una mansanita y mueres alaverga"  HorizontalAlignment="Center" TextAlignment="Center"  FontStretch="Condensed" TextWrapping="Wrap" FontSize="20" />
                     </StackPanel>
                 </Button>
                 <Button Style="{StaticResource AbilityButton}" VerticalAlignment="Center" Height="300" Width="200" >
                     <StackPanel Margin= "5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                         <Image Source="/Assets/Ability02.png" Width="100" Height="100"/>
-                        <TextBlock Style="{StaticResource AbilityText}" Text="Ability 1 " FontWeight="Bold"/>
+                        <TextBlock Style="{StaticResource AbilityText}" Text="Ability 3 " FontWeight="Bold"/>
                         <TextBlock x:Name="abil3Desc" Style="{StaticResource AbilityText}" Text = "Bajas la defensa del rival"  HorizontalAlignment="Center" TextAlignment="Center"  FontStretch="Condensed" TextWrapping="Wrap" FontSize="20" />
                     </StackPanel>
                 </Button>
@@ -194,10 +203,12 @@
         <Viewbox Grid.Row="3" Grid.Column="1" >
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Image Source="/Assets/InventarioTemp.png" HorizontalAlignment="Left" Grid.ColumnSpan="2" />
+                <Image Source="/Assets/InventarioTemp.png" HorizontalAlignment="Left" Grid.ColumnSpan="3" />
+                <TextBlock x:Name="itemDescription" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="0,50,0,50" FontStretch="Condensed" TextWrapping="Wrap" FontSize="20" Width="215"/>
                 <Grid  x:Name="MiStack">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
@@ -209,23 +220,24 @@
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
 
-                    <ContentControl x:Name="Wood" CanDrag="True" DragStarting="Inventario_DragStarting"  UseSystemFocusVisuals="True" Height="100" Width="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+
+                    <ContentControl x:Name="Wood" Style="{StaticResource Item}" DragStarting="Inventario_DragStarting">
                         <Image Source="/Assets/resource_lumber.png"/>
                     </ContentControl>
-                    <ContentControl x:Name="Bow" CanDrag="True" DragStarting="Inventario_DragStarting" UseSystemFocusVisuals="True" Grid.Column="1"  Height="100" Width="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
-                        <Image Source="/Assets/Ability04.png"  />
+                    <ContentControl x:Name="Bow" Style="{StaticResource Item}" Grid.Column="1" DragStarting="Inventario_DragStarting">
+                        <Image Source="/Assets/Ability04.png"/>
                     </ContentControl>
-                    <ContentControl x:Name="Fire" CanDrag="True" DragStarting="Inventario_DragStarting" UseSystemFocusVisuals="True" Grid.Column="2"  Height="100" Width="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
-                        <Image Source="/Assets/Campfire.png"  />
+                    <ContentControl x:Name="Fire" Style="{StaticResource Item}" Grid.Column="2" DragStarting="Inventario_DragStarting">
+                        <Image Source="/Assets/Campfire.png"/>
                     </ContentControl>
-                    <ContentControl x:Name="Brick" CanDrag="True" DragStarting="Inventario_DragStarting" UseSystemFocusVisuals="True" Grid.Row="1"  Height="100" Width="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
-                        <Image Source="/Assets/resource_iron.png"  />
+                    <ContentControl x:Name="Brick" Style="{StaticResource Item}" Grid.Row="1" DragStarting="Inventario_DragStarting">
+                        <Image Source="/Assets/resource_iron.png"/>
                     </ContentControl>
-                    <ContentControl x:Name="Apple" CanDrag="True" DragStarting="Inventario_DragStarting" UseSystemFocusVisuals="True" Grid.Column="1" Grid.Row="1"  Height="100" Width="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
-                        <Image Source="/Assets/resource_apple.png"  />
+                    <ContentControl x:Name="Apple" Style="{StaticResource Item}" Grid.Row="1" Grid.Column="1" DragStarting="Inventario_DragStarting">
+                        <Image Source="/Assets/resource_apple.png"/>
                     </ContentControl>
-                    <ContentControl x:Name="Money" CanDrag="True" DragStarting="Inventario_DragStarting" UseSystemFocusVisuals="True" Grid.Column="2" Grid.Row="1"  Height="100" Width="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
-                        <Image Source="/Assets/Ability00.png"  />
+                    <ContentControl x:Name="Money" Style="{StaticResource Item}" Grid.Row="1" Grid.Column="2" DragStarting="Inventario_DragStarting">
+                        <Image Source="/Assets/Ability00.png"/>
                     </ContentControl>
                 </Grid>
             </Grid>
