@@ -246,11 +246,16 @@
                 <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
             <Image Source="/Assets/log.png" VerticalAlignment="Center"  Grid.ColumnSpan="2" Grid.RowSpan="3"/>
-            <ScrollViewer Grid.Column="1" Grid.Row="0" Margin="10,50,10,10" FlowDirection="LeftToRight">
-            <StackPanel Orientation="Horizontal"  >
+            <ScrollViewer Grid.RowSpan="2"  VerticalScrollBarVisibility= "Disabled" HorizontalScrollBarVisibility="Visible" Grid.Column="1"
+                          Grid.Row="0" Margin="10,50,10,10" FlowDirection="LeftToRight" >
+                <StackPanel Orientation="Horizontal" Margin="10,10,10,50">
                 <Image Source="/Assets/Mision01.png" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10,10,10,10"/>
                 <Image Source="/Assets/Mision02.png" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10,10,10,10"/>
                 <Image Source="/Assets/Mision03.png" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10,10,10,10"/>
+                <Image Source="/Assets/Mision02.png" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10,10,10,10"/>
+                <Image Source="/Assets/Mision03.png" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10,10,10,10"/>
+                <Image Source="/Assets/Mision02.png" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10,10,10,10"/>
+                <Image Source="/Assets/Mision01.png" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10,10,10,10"/>
             </StackPanel>
             </ScrollViewer>
             <Button Style="{StaticResource GameButton}" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="0" Grid.Row="1" Click="Back5_Click"  Width="175" Background="Transparent">
